@@ -28,10 +28,3 @@ To build the iconset:
 ## Using the iconset
 
 That's easy. Just copy all files from the `iconset` folder to your openHAB configuration in the folder `icons/classic`.
-
-## TODO
-
-- Make the tool an autonomous application
-- Support for command line parameters
-- Embed MDI repository
-- Include download of MDI icons in script
