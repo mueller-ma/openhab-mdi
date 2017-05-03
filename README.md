@@ -4,6 +4,11 @@ This project creates a set of icons for use with [openHAB 2](https://www.openhab
 
 ## Pre-requisites
 
+Install the required libraries:
+```
+pip3 install -r requirements.txt
+```
+
 The script expects the source icons in a sub folder `download` of the script location. Download the repo as a ZIP and extract it there first.
 
 ## Configuration
