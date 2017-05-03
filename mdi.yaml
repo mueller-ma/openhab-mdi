@@ -361,3 +361,15 @@ mdi:
     - dest: download
   - timer:
     - dest: timer
+  - autorenew:
+    - dest: job
+    - dest: job-on
+      color: limegreen
+      alias:
+        - job-running
+    - dest: job-off
+      color: crimson
+      alias:
+        - job-error
+    - dest: job-processing
+      color: mediumblue
