@@ -1,0 +1,363 @@
+# https://www.w3schools.com/colors/colors_groups.asp
+# groen: limegreen
+# geel: gold
+# rood: crimson
+# blauw: mediumblue
+
+# minimal set -- categories
+# https://www.eclipse.org/smarthome/documentation/development/bindings/thing-definition.html#channel-categories
+
+mdi:
+  - playlist-play:
+    - dest: playlist
+  - text-to-speech:
+    - dest: tts
+    - dest: tts-on
+      color: limegreen
+  - text-to-speech-off:
+    - dest: tts-off
+      color: crimson
+  - music:
+    - dest: music
+    - dest: music-on
+      color: limegreen
+  - music-off:
+    - dest: music-off
+      color: crimson
+  - bell:
+    - dest: alarm
+      alias:
+        - siren
+    - dest: alarm-off
+      color: limegreen
+      alias:
+        - siren-off
+  - bell-ring:
+    - dest: alarm-on
+      color: crimson
+      alias:
+        - siren-on
+  - water-percent:
+    - dest: humidity
+    - dest: humidity-0
+      color: crimson
+      alias:
+        - humidity-10
+        - humidity-20
+        - humidity-30
+    - dest: humidity-40
+      color: limegreen
+      alias:
+        - humidity-50
+        - humidity-60
+    - dest: humidity-70
+      color: mediumblue
+      alias:
+        - humidity-80
+        - humidity-90
+        - humidity-100
+  - palette:
+    - dest: colorlight
+      alias:
+        - colorwheel
+  - bell:
+    - dest: alarm
+    - dest: alarm-on
+      color: crimson
+    - dest: alarm-off
+      color: limegreen
+  - battery-outline:
+    - dest: battery
+      alias:
+        - battery-0
+  - battery-10:
+    - dest: battery-10
+      color: crimson
+  - battery-20:
+    - dest: battery-20
+      color: crimson
+  - battery-30:
+    - dest: battery-30
+      color: crimson
+  - battery-40:
+    - dest: battery-40
+      color: gold
+  - battery-50:
+    - dest: battery-50
+      color: gold
+  - battery-60:
+    - dest: battery-60
+      color: gold
+  - battery-70:
+    - dest: battery-70
+      color: limegreen
+  - battery-80:
+    - dest: battery-80
+      color: limegreen
+  - battery-90:
+    - dest: battery-90
+      color: limegreen
+  - battery:
+    - dest: battery-100
+      color: limegreen
+      alias:
+        - battery-on
+  - fire:
+    - dest: fire
+      alias:
+        - fire-on
+    - dest: fire-off
+      color: grey
+  - hotel:
+    - dest: bedroom
+  - blinds:
+    - dest: blinds
+      alias:
+        - blinds-0
+        - blinds-10
+        - blinds-20
+        - blinds-30
+        - blinds-40
+        - blinds-50
+        - blinds-60
+        - blinds-70
+        - blinds-80
+        - blinds-90
+        - blinds-100
+        - rollershutter
+        - rollershutter-0
+        - rollershutter-10
+        - rollershutter-20
+        - rollershutter-30
+        - rollershutter-40
+        - rollershutter-50
+        - rollershutter-60
+        - rollershutter-70
+        - rollershutter-80
+        - rollershutter-90
+        - rollershutter-100
+  - bluetooth:
+    - dest: bluetooth
+  - calendar:
+    - dest: calendar
+  - chart-bar:
+    - dest: chart
+  - popcorn:
+    - dest: cinema
+  - garage:
+    - dest: garagedoor
+    - dest: garagedoor-closed
+      color: limegreen
+      alias:
+        - garagedoor-100
+  - garage-open:
+    - dest: garagedoor-open
+      color: crimson
+      alias:
+        - garagedoor-0
+        - garagedoor-10
+        - garagedoor-20
+        - garagedoor-30
+        - garagedoor-40
+        - garagedoor-50
+        - garagedoor-60
+        - garagedoor-70
+        - garagedoor-80
+        - garagedoor-90
+  - glassdoor:
+    - dest: door
+      alias:
+        - frontdoor
+    - dest: door-open
+      color: crimson
+      alias:
+        - frontdoor-open
+    - dest: door-closed
+      color: limegreen
+      alias:
+        - frontdoor-closed
+  - clock:
+    - dest: clock
+    - dest: clock-on
+      color: limegreen
+  - flash:
+    - dest: energy
+  - alert:
+    - dest: error
+  - fan:
+    - dest: fan
+      alias:
+        - fan_box
+        - fan_ceiling
+  - power:
+    - dest: switch
+    - dest: switch-on
+      color: limegreen
+    - dest: swith-off
+      color: crimson
+  - signal:
+    - dest: signal
+      alias:
+        - signal-on
+    - dest: signal-0
+      color: crimson
+    - dest: signal-1
+      color: crimson
+    - dest: signal-2
+      color: orange
+    - dest: signal-3
+      color: gold
+    - dest: signal-4
+      color: limegreen
+  - signal-off:
+    - dest: signal-off
+      color: grey
+  - wifi:
+    - dest: network
+    - dest: network-on
+      color: limegreen
+  - wifi-off:
+    - dest: network-off
+      color: crimson
+  - home:
+    - dest: house
+      alias:
+      - group
+    - dest: present
+      color: grey
+    - dest: present-on
+      color: limegreen
+    - dest: present-off
+      color: crimson
+  - shield:
+    - dest: shield
+    - dest: shield-on
+      color: limegreen
+    - dest: shield-off
+      color: crimson
+  - alphabetical:
+    - dest: text
+  - numeric:
+    - dest: number
+  - chart-line:
+    - dest: line
+  - gauge:
+    - dest: pressure
+  - memory:
+    - dest: memory
+  - radio:
+    - dest: receiver
+      alias:
+      - player
+    - dest: receiver-on
+      color: limegreen
+    - dest: receiver-off
+      color: crimson
+  - run-fast:
+    - dest: motion
+  - tree:
+    - dest: garden
+  - gas-cylinder:
+    - dest: gas
+  - sofa:
+    - dest: sofa
+  - thermometer:
+    - dest: temperature
+  - weather-sunset-up:
+    - dest: sunrise
+  - weather-sunset-down:
+    - dest: sunset
+  - weather-partlycloudy:
+    - dest: sun_clouds
+  - weather-pouring:
+    - dest: rain
+  - weather-windy:
+    - dest: wind
+  - settings:
+    - dest: settings
+  - lightbulb:
+    - dest: light-0
+      alias:
+      - light
+      - light-off
+      - dimmablelight
+      - slider
+      - dimmablelight-0
+      - slider-0
+    - dest: light-100
+      color: "#FFD700" # gold
+      alias:
+      - light-on
+      - dimmablelight-100
+      - slider-100
+    - dest: light-90
+      color: "#E5C100" # gradient
+      alias:
+      - dimmablelight-90
+      - slider-90
+    - dest: light-80
+      color: "#CCAC00" # gradient
+      alias:
+      - dimmablelight-80
+      - slider-80
+    - dest: light-70
+      color: "#B29600" # gradient
+      alias:
+      - dimmablelight-70
+      - slider-70
+    - dest: light-60
+      color: "#998100" # gradient
+      alias:
+      - dimmablelight-60
+      - slider-60
+    - dest: light-50
+      color: "#7F6B00" # gradient
+      alias:
+      - dimmablelight-50
+      - slider-50
+    - dest: light-40
+      color: "#665600" # gradient
+      alias:
+      - dimmablelight-40
+      - slider-40
+    - dest: light-30
+      color: "#4C4000" # gradient
+      alias:
+      - dimmablelight-30
+      - slider-30
+    - dest: light-20
+      color: "#332B00" # gradient
+      alias:
+      - dimmablelight-20
+      - slider-20
+    - dest: light-10
+      color: "#191500" # gradient
+      alias:
+      - dimmablelight-10
+      - slider-10
+  - server:
+    - dest: server
+  - projector-screen:
+    - dest: cinemascreen
+      alias:
+        - cinemascreen-100
+    - dest: cinemascreen-0
+    - dest: cinemascreen-10
+    - dest: cinemascreen-20
+    - dest: cinemascreen-30
+    - dest: cinemascreen-40
+    - dest: cinemascreen-50
+    - dest: cinemascreen-60
+    - dest: cinemascreen-70
+    - dest: cinemascreen-80
+    - dest: cinemascreen-90
+  - snowflake:
+    - dest: climate
+    - dest: climate-on
+      color: mediumblue
+  - cloud-upload:
+    - dest: upload
+  - cloud-download:
+    - dest: download
+  - timer:
+    - dest: timer
