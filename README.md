@@ -9,7 +9,7 @@ Install the required libraries:
 pip3 install -r requirements.txt
 ```
 
-The script expects the source icons in a sub folder `download` of the script location. Download the repo as a ZIP and extract it there first.
+The script expects the source icons in a sub folder `download` of the script location. [Download the repo as a ZIP](https://github.com/Templarian/MaterialDesign/archive/master.zip) and extract it there first.
 
 ## Configuration
 
@@ -24,6 +24,10 @@ To build the iconset:
 
 1. Run `python3 mdi.py` from the command line to create the .svg icons in a subfolder `iconset`.
 2. Run the `_icon_convert.sh` script to create the corresponding .png files.
+
+## Using the iconset
+
+That's easy. Just copy all files from the `iconset` folder to your openHAB configuration in the folder `icons/classic`.
 
 ## TODO
 
