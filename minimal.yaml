@@ -1,0 +1,249 @@
+mdi:
+  - bell:
+    - dest: alarm
+    - dest: alarm-off
+      color: "#32CD32"
+  - bell-ring:
+    - dest: alarm-on
+      color: "#DC143C"
+  - battery-outline:
+    - dest: battery
+      alias:
+        - battery-0
+  - battery-10:
+    - dest: battery-10
+      color: "#DC143C"
+  - battery-20:
+    - dest: battery-20
+      color: "#DC143C"
+  - battery-30:
+    - dest: battery-30
+      color: "#DC143C"
+  - battery-40:
+    - dest: battery-40
+      color: "#FFD700"
+  - battery-50:
+    - dest: battery-50
+      color: "#FFD700"
+  - battery-60:
+    - dest: battery-60
+      color: "#FFD700"
+  - battery-70:
+    - dest: battery-70
+      color: "#32CD32"
+  - battery-80:
+    - dest: battery-80
+      color: "#32CD32"
+  - battery-90:
+    - dest: battery-90
+      color: "#32CD32"
+  - battery:
+    - dest: battery-100
+      color: "#32CD32"
+      alias:
+        - battery-on
+  - blinds:
+    - dest: blinds
+      alias:
+        - blinds-0
+        - blinds-10
+        - blinds-20
+        - blinds-30
+        - blinds-40
+        - blinds-50
+        - blinds-60
+        - blinds-70
+        - blinds-80
+        - blinds-90
+        - blinds-100
+  - periodic-table-co2:
+    - dest: carbondioxide
+  - palette:
+    - dest: colorlight
+  - window-closed:
+    - dest: contact
+      alias:
+        - window
+    - dest: contact-closed
+      color: "#32CD32"
+      alias:
+        - window-closed
+  - window-open:
+    - dest: contact-open
+      color: "#DC143C"
+      alias:
+        - contact-ajar
+        - window-open
+        - window-ajar
+  - glassdoor:
+    - dest: door
+    - dest: door-open
+      color: "#DC143C"
+    - dest: door-closed
+      color: "#32CD32"
+  - flash:
+    - dest: energy
+  - fan:
+    - dest: fan
+  - fire:
+    - dest: fire
+      alias:
+        - fire-on
+    - dest: fire-off
+      color: "#C0C0C0"
+  - waves:
+    - dest: flow
+  - garage:
+    - dest: garagedoor
+    - dest: garagedoor-closed
+      color: "#32CD32"
+      alias:
+        - garagedoor-100
+  - garage-open:
+    - dest: garagedoor-open
+      color: "#DC143C"
+      alias:
+        - garagedoor-0
+        - garagedoor-10
+        - garagedoor-20
+        - garagedoor-30
+        - garagedoor-40
+        - garagedoor-50
+        - garagedoor-60
+        - garagedoor-70
+        - garagedoor-80
+        - garagedoor-90
+  - gas-cylinder:
+    - dest: gas
+  - water-percent:
+    - dest: humidity
+    - dest: humidity-0
+      color: "#DC143C"
+      alias:
+        - humidity-10
+        - humidity-20
+        - humidity-30
+    - dest: humidity-40
+      color: "#32CD32"
+      alias:
+        - humidity-50
+        - humidity-60
+    - dest: humidity-70
+      color: "#0000CD"
+      alias:
+        - humidity-80
+        - humidity-90
+        - humidity-100
+  - lightbulb:
+    - dest: light-0
+      alias:
+      - light
+      - light-off
+      - dimmablelight
+      - dimmablelight-0
+    - dest: light-100
+      color: "#FFD700" # "#FFD700"
+      alias:
+      - light-on
+      - dimmablelight-100
+    - dest: light-90
+      color: "#E5C100" # gradient
+      alias:
+      - dimmablelight-90
+    - dest: light-80
+      color: "#CCAC00" # gradient
+      alias:
+      - dimmablelight-80
+    - dest: light-70
+      color: "#B29600" # gradient
+      alias:
+      - dimmablelight-70
+    - dest: light-60
+      color: "#998100" # gradient
+      alias:
+      - dimmablelight-60
+    - dest: light-50
+      color: "#7F6B00" # gradient
+      alias:
+      - dimmablelight-50
+    - dest: light-40
+      color: "#665600" # gradient
+      alias:
+      - dimmablelight-40
+    - dest: light-30
+      color: "#4C4000" # gradient
+      alias:
+      - dimmablelight-30
+    - dest: light-20
+      color: "#332B00" # gradient
+      alias:
+      - dimmablelight-20
+    - dest: light-10
+      color: "#191500" # gradient
+      alias:
+      - dimmablelight-10
+  - run-fast:
+    - dest: motion
+  - cursor-move:
+    - dest: movecontrol
+  - music:
+    - dest: player
+  - power-plug:
+    - dest: poweroutlet
+    - dest: poweroutlet-on
+      color: "#32CD32"
+  - power-plug-off:
+    - dest: poweroutlet-off
+      color: "#DC143C"
+  - gauge:
+    - dest: pressure
+  - signal:
+    - dest: qualityofservice
+    - dest: qualityofservice-1
+      color: "#DC143C"
+    - dest: qualityofservice-2
+      color: "#FF8C00"
+    - dest: qualityofservice-3
+      color: "#FFD700"
+    - dest: qualityofservice-4
+      color: "#32CD32"
+  - signal-off:
+    - dest: qualityofservice-0
+      color: "#C0C0C0"
+  - weather-rainy:
+    - dest: rain
+  - microphone:
+    - dest: recorder
+  - smoking:
+    - dest: smoke
+  - volume:
+    - dest: soundvolume
+  - volume-high:
+    - dest: soundvolume-100
+  - volume-medium:
+    - dest: soundvolume-66
+  - volume-low:
+    - dest: soundvolume-33
+  - volume-off:
+    - dest: soundvolume-0
+      alias:
+        - soundvolume_mute
+  - power:
+    - dest: switch
+    - dest: switch-on
+      color: "#32CD32"
+    - dest: swith-off
+      color: "#DC143C"
+  - thermometer:
+    - dest: temperature
+  - thermometer-lines:
+    - dest: temperature-hot
+      color: "#DC143C"
+    - dest: temperature-cold
+      color: "#0000CD"
+  - water:
+    - dest: water
+  - weather-windy:
+    - dest: wind
+  - magnify:
+    - dest: zoom
