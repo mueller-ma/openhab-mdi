@@ -18,10 +18,12 @@ A good overview of available colors can be found [at W3 Schools](https://www.w3s
 
 The icon colors used are:
 
-- green: "#32CD32"
-- yellow: "#FFD700"
-- red: "#DC143C"
-- blue: "#0000CD"
+- green: "#32CD32" (lime green)
+- orange: "#FF8C00" (dark orange)
+- yellow: "#FFD700" (gold)
+- red: "#DC143C" (crimson)
+- blue: "#0000CD" (medium blue)
+- grey: "#C0C0C0" (silver)
 
 Icon colors follow the dynamic state or value when possible. For example:
 
