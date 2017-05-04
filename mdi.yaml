@@ -1,57 +1,48 @@
-# https://www.w3schools.com/colors/colors_groups.asp
-# groen: limegreen
-# geel: gold
-# rood: crimson
-# blauw: mediumblue
-
-# minimal set -- categories
-# https://www.eclipse.org/smarthome/documentation/development/bindings/thing-definition.html#channel-categories
-
 mdi:
   - playlist-play:
     - dest: playlist
   - text-to-speech:
     - dest: tts
     - dest: tts-on
-      color: limegreen
+      color: "#32CD32"
   - text-to-speech-off:
     - dest: tts-off
-      color: crimson
+      color: "#DC143C"
   - music:
     - dest: music
     - dest: music-on
-      color: limegreen
+      color: "#32CD32"
   - music-off:
     - dest: music-off
-      color: crimson
+      color: "#DC143C"
   - bell:
     - dest: alarm
       alias:
         - siren
     - dest: alarm-off
-      color: limegreen
+      color: "#32CD32"
       alias:
         - siren-off
   - bell-ring:
     - dest: alarm-on
-      color: crimson
+      color: "#DC143C"
       alias:
         - siren-on
   - water-percent:
     - dest: humidity
     - dest: humidity-0
-      color: crimson
+      color: "#DC143C"
       alias:
         - humidity-10
         - humidity-20
         - humidity-30
     - dest: humidity-40
-      color: limegreen
+      color: "#32CD32"
       alias:
         - humidity-50
         - humidity-60
     - dest: humidity-70
-      color: mediumblue
+      color: "#0000CD"
       alias:
         - humidity-80
         - humidity-90
@@ -63,43 +54,43 @@ mdi:
   - bell:
     - dest: alarm
     - dest: alarm-on
-      color: crimson
+      color: "#DC143C"
     - dest: alarm-off
-      color: limegreen
+      color: "#32CD32"
   - battery-outline:
     - dest: battery
       alias:
         - battery-0
   - battery-10:
     - dest: battery-10
-      color: crimson
+      color: "#DC143C"
   - battery-20:
     - dest: battery-20
-      color: crimson
+      color: "#DC143C"
   - battery-30:
     - dest: battery-30
-      color: crimson
+      color: "#DC143C"
   - battery-40:
     - dest: battery-40
-      color: gold
+      color: "#FFD700"
   - battery-50:
     - dest: battery-50
-      color: gold
+      color: "#FFD700"
   - battery-60:
     - dest: battery-60
-      color: gold
+      color: "#FFD700"
   - battery-70:
     - dest: battery-70
-      color: limegreen
+      color: "#32CD32"
   - battery-80:
     - dest: battery-80
-      color: limegreen
+      color: "#32CD32"
   - battery-90:
     - dest: battery-90
-      color: limegreen
+      color: "#32CD32"
   - battery:
     - dest: battery-100
-      color: limegreen
+      color: "#32CD32"
       alias:
         - battery-on
   - fire:
@@ -147,12 +138,12 @@ mdi:
   - garage:
     - dest: garagedoor
     - dest: garagedoor-closed
-      color: limegreen
+      color: "#32CD32"
       alias:
         - garagedoor-100
   - garage-open:
     - dest: garagedoor-open
-      color: crimson
+      color: "#DC143C"
       alias:
         - garagedoor-0
         - garagedoor-10
@@ -169,17 +160,17 @@ mdi:
       alias:
         - frontdoor
     - dest: door-open
-      color: crimson
+      color: "#DC143C"
       alias:
         - frontdoor-open
     - dest: door-closed
-      color: limegreen
+      color: "#32CD32"
       alias:
         - frontdoor-closed
   - clock:
     - dest: clock
     - dest: clock-on
-      color: limegreen
+      color: "#32CD32"
   - flash:
     - dest: energy
   - alert:
@@ -192,33 +183,33 @@ mdi:
   - power:
     - dest: switch
     - dest: switch-on
-      color: limegreen
+      color: "#32CD32"
     - dest: swith-off
-      color: crimson
+      color: "#DC143C"
   - signal:
     - dest: signal
       alias:
         - signal-on
     - dest: signal-0
-      color: crimson
+      color: "#DC143C"
     - dest: signal-1
-      color: crimson
+      color: "#DC143C"
     - dest: signal-2
       color: orange
     - dest: signal-3
-      color: gold
+      color: "#FFD700"
     - dest: signal-4
-      color: limegreen
+      color: "#32CD32"
   - signal-off:
     - dest: signal-off
       color: grey
   - wifi:
     - dest: network
     - dest: network-on
-      color: limegreen
+      color: "#32CD32"
   - wifi-off:
     - dest: network-off
-      color: crimson
+      color: "#DC143C"
   - home:
     - dest: house
       alias:
@@ -226,15 +217,15 @@ mdi:
     - dest: present
       color: grey
     - dest: present-on
-      color: limegreen
+      color: "#32CD32"
     - dest: present-off
-      color: crimson
+      color: "#DC143C"
   - shield:
     - dest: shield
     - dest: shield-on
-      color: limegreen
+      color: "#32CD32"
     - dest: shield-off
-      color: crimson
+      color: "#DC143C"
   - alphabetical:
     - dest: text
   - numeric:
@@ -250,9 +241,9 @@ mdi:
       alias:
       - player
     - dest: receiver-on
-      color: limegreen
+      color: "#32CD32"
     - dest: receiver-off
-      color: crimson
+      color: "#DC143C"
   - run-fast:
     - dest: motion
   - tree:
@@ -285,7 +276,7 @@ mdi:
       - dimmablelight-0
       - slider-0
     - dest: light-100
-      color: "#FFD700" # gold
+      color: "#FFD700" # "#FFD700"
       alias:
       - light-on
       - dimmablelight-100
@@ -354,7 +345,7 @@ mdi:
   - snowflake:
     - dest: climate
     - dest: climate-on
-      color: mediumblue
+      color: "#0000CD"
   - cloud-upload:
     - dest: upload
   - cloud-download:
@@ -364,12 +355,12 @@ mdi:
   - autorenew:
     - dest: job
     - dest: job-on
-      color: limegreen
+      color: "#32CD32"
       alias:
         - job-running
     - dest: job-off
-      color: crimson
+      color: "#DC143C"
       alias:
         - job-error
     - dest: job-processing
-      color: mediumblue
+      color: "#0000CD"
