@@ -7,9 +7,6 @@ from shutil import copyfile
 import fileinput
 import ruamel.yaml as yaml
 
-srcpath = "./download/MaterialDesign-master/icons/svg"
-dstpath = "./iconset"
-
 def svg_copy(src, dst):
     try:
         copyfile(src, dst)
@@ -42,6 +39,15 @@ def is_valid_file(parser, arg):
     else:
         return arg
 
+def empty_folder(folder_path, verbose):
+    if verbose:
+        print('Deleting all files from ' + folder_path + '...')
+    for file_object in os.listdir(folder_path):
+        file_object_path = os.path.join(folder_path, file_object)
+        if os.path.isfile(file_object_path):
+            os.unlink(file_object_path)
+        else:
+            shutil.rmtree(file_object_path)
 
 def get_parser():
     """Get parser object for script """
@@ -60,25 +66,24 @@ def get_parser():
     #                     metavar="CONFIG",
     #                     default=home + "/.config/mdi.conf")
     parser.add_argument("-f", "--file",
-                        dest="filename",
                         action="store",
+                        dest="filename",
                         type=lambda x: is_valid_file(parser, x),
-                        metavar="FILE",
                         default=pwd + "/mdi.yaml",
+                        metavar="FILE",
                         help="get input/output mapping from FILE")
-
-    parser.add_argument("-i", "--input",
+    parser.add_argument("-i", "--input-path",
                         dest="input_path",
                         type=lambda x: is_valid_file(parser, x),
-                        help="read icons from INPUT PATH",
-                        metavar="INPUT PATH")
-
-    parser.add_argument("-o", "--output",
+                        default=pwd + "/download/MaterialDesign-master/icons/svg",
+                        metavar="INPUT-PATH",
+                        help="read icons from INPUT-PATH")
+    parser.add_argument("-o", "--output-path",
                         dest="output_path",
                         type=lambda x: is_valid_file(parser, x),
-                        metavar="OUTPUT PATH",
                         default=pwd+"/iconset",
-                        help="write icons to OUTPUT PATH")
+                        metavar="OUTPUT-PATH",
+                        help="write icons to OUTPUT-PATH")
     parser.add_argument("-n", "--dry-run",
                         action="store_true",
                         dest="dryrun",
@@ -94,7 +99,6 @@ def get_parser():
                         dest="empty",
                         default=False,
                         help="empty output folder first")
-
     return parser
 
 def main(argv):
@@ -103,20 +107,13 @@ def main(argv):
 
     if (args.empty):
         # remove all files in output folder
-        folder_path = args.output_path
+        if (args.dryrun):
+            print('All files in ' + args.output_path + ' would have been deleted.')
+        else:
+            empty_folder(args.output_path, args.verbose)
 
-        if args.verbose:
-            print('Deleting all files from ' + folder_path + '...')
 
-        for file_object in os.listdir(folder_path):
-            file_object_path = os.path.join(folder_path, file_object)
-            if os.path.isfile(file_object_path):
-                os.unlink(file_object_path)
-            else:
-                shutil.rmtree(file_object_path)
-
-    file = args.filename
-    with open(file) as f:
+    with open(args.filename) as f:
         try:
             doc = yaml.safe_load(f)
             f.close()
@@ -125,27 +122,35 @@ def main(argv):
                     for dest in mdi[source]:
 
                         # copy source to destination
-                        srcfile = srcpath + '/' + source + '.svg'
-                        dstfile = dstpath + '/' + dest['dest'] + '.svg'
+                        srcfile = args.input_path + '/' + source + '.svg'
+                        dstfile = args.output_path + '/' + dest['dest'] + '.svg'
 
-                        if (not args.dryrun):
 
-                            # copy file
+                        # copy file
+                        if args.dryrun:
+                            print('File ' + srcfile + ' would have been copied to ' + dstfile)
+                        else:
                             if args.verbose:
                                 print('Copy ' + srcfile + ' to ' + dstfile)
                             svg_copy(srcfile, dstfile)
 
-                            #modify color of destination file
-                            if 'color' in dest:
+                        #modify color of destination file
+                        if 'color' in dest:
+                            if args.dryrun:
+                                print('Color of file ' + dstfile + ' would have replaced with ' + dest['color'])
+                            else:
                                 if args.verbose:
                                     print('Replace icon color with ' + dest['color'])
                                 svg_replace_fill(dstfile, '#000000', dest['color'])
 
-                            # create aliases
-                            if 'alias' in dest:
-                                for alias in dest['alias']:
-                                    srcfile = dstpath + '/' + dest['dest'] + '.svg'
-                                    dstfile = dstpath + '/' + alias + '.svg'
+                        # create aliases
+                        if 'alias' in dest:
+                            for alias in dest['alias']:
+                                srcfile = args.output_path + '/' + dest['dest'] + '.svg'
+                                dstfile = args.output_path + '/' + alias + '.svg'
+                                if args.dryrun:
+                                    print('Alias ' + dstfile + ' would have created for ' + srcfile)
+                                else:
                                     if args.verbose:
                                         print('Create alias ' + dstfile)
                                     svg_copy(srcfile, dstfile)
