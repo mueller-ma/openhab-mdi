@@ -1,505 +1,505 @@
 mdi:
-   alarm-light:
-    - dest: alarm 
-   stairs:
-    - dest: attic 
-   baby:
-    - dest: baby_1 
-   baby:
-    - dest: baby_2 
-   baby:
-    - dest: baby_3 
-   baby:
-    - dest: baby_4 
-   baby:
-    - dest: baby_5 
-   baby:
-    - dest: baby_6 
-   x:
-    - dest: bath 
-   battery-outline:
-    - dest: battery-0 
-   battery-10:
-    - dest: battery-10 
-   battery:
-    - dest: battery-100 
-   battery-20:
-    - dest: battery-20 
-   battery-30:
-    - dest: battery-30 
-   battery-40:
-    - dest: battery-40 
-   battery-50:
-    - dest: battery-50 
-   battery-60:
-    - dest: battery-60 
-   battery-70:
-    - dest: battery-70 
-   battery-80:
-    - dest: battery-80 
-   battery-90:
-    - dest: battery-90 
-   battery:
-    - dest: battery 
-   hotel:
-    - dest: bedroom 
-   hotel:
-    - dest: bedroom_blue 
-   hotel:
-    - dest: bedroom_orange 
-   hotel:
-    - dest: bedroom_red 
-   blinds:
-    - dest: blinds 
-   bluetooth:
-    - dest: bluetooth 
-   water-pump:
-    - dest: boiler_viessmann 
-   human-male:
-    - dest: boy_1 
-   human-male:
-    - dest: boy_2 
-   human-male:
-    - dest: boy_3 
-   human-male:
-    - dest: boy_4 
-   human-male:
-    - dest: boy_5 
-   human-male:
-    - dest: boy_6 
-   calendar:
-    - dest: calendar 
-   webcam:
-    - dest: camera 
-   periodic-table-co2:
-    - dest: carbondioxide 
-   x:
-    - dest: cellar 
-   chart-bar:
-    - dest: chart 
-   theater:
-    - dest: cinema 
-   projector-screen:
-    - dest: cinemascreen 
-   beaker:
-    - dest: cistern 
-   snowflake:
-    - dest: climate-on 
-   snowflake:
-    - dest: climate 
-   alarm-check:
-    - dest: clock-on 
-   alarm:
-    - dest: clock 
-   palette:
-    - dest: colorlight 
-   palette:
-    - dest: colorwheel 
-   window-open:
-    - dest: contact-ajar 
-   window-closed:
-    - dest: contact-closed 
-   window-open:
-    - dest: contact-open 
-   window-closed:
-    - dest: contact 
-   x:
-    - dest: corridor 
-   lightbulb:
-    - dest: dimmablelight 
-   x:
-    - dest: door-closed 
-   x:
-    - dest: door-open 
-   glassdoor:
-    - dest: door 
-   washing-machine:
-    - dest: dryer 
-   power:
-    - dest: energy 
-   alert:
-    - dest: error 
-   fan:
-    - dest: fan 
-   air-conditioner:
-    - dest: fan_box 
-   fan:
-    - dest: fan_ceiling 
-   water-pump:
-    - dest: faucet 
-   fire:
-    - dest: fire-off 
-   fire:
-    - dest: fire-on 
-   fire:
-    - dest: fire 
-   numeric-1-box-multiple-outline:
-    - dest: firstfloor 
-   waves:
-    - dest: flow 
-   arrow-up-bold:
-    - dest: flowpipe 
-   x:
-    - dest: frontdoor-closed 
-   x:
-    - dest: frontdoor-open 
-   x:
-    - dest: frontdoor 
-   garage:
-    - dest: garage 
-   garage:
-    - dest: garage_detached 
-   garage:
-    - dest: garage_detached_selected 
-   garage-open:
-    - dest: garagedoor-ajar 
-   garage:
-    - dest: garagedoor-closed 
-   garage-open:
-    - dest: garagedoor-open 
-   garage:
-    - dest: garagedoor 
-   tree:
-    - dest: garden 
-   gas-cylinder:
-    - dest: gas 
-   human-female:
-    - dest: girl_1 
-   human-female:
-    - dest: girl_2 
-   human-female:
-    - dest: girl_3 
-   human-female:
-    - dest: girl_4 
-   human-female:
-    - dest: girl_5 
-   human-female:
-    - dest: girl_6 
-   leaf:
-    - dest: grass 
-   x:
-    - dest: greenhouse 
-   numeric-0-box-multiple-outline:
-    - dest: groundfloor 
-   home:
-    - dest: group 
-   nest-thermostat:
-    - dest: heating-off 
-   nest-thermostat:
-    - dest: heating-on 
-   nest-thermostat:
-    - dest: heating 
-   home:
-    - dest: house 
-   water-percent:
-    - dest: humidity 
-   x:
-    - dest: incline 
-   key-variant:
-    - dest: keyring 
-   pot-mix:
-    - dest: kitchen 
-   lightbulb-outline:
-    - dest: light-off 
-   lightbulb-on:
-    - dest: light-on 
-   lightbulb:
-    - dest: light 
-   trending-down:
-    - dest: line-decline 
-   trending-up:
-    - dest: line-incline 
-   trending-neutral:
-    - dest: line-stagnation 
-   chart-line:
-    - dest: line 
-   lock:
-    - dest: lock-closed 
-   lock-unlocked:
-    - dest: lock-open 
-   lock:
-    - dest: lock 
-   human-male:
-    - dest: man_1 
-   human-male:
-    - dest: man_2 
-   human-male:
-    - dest: man_3 
-   human-male:
-    - dest: man_4 
-   human-male:
-    - dest: man_5 
-   human-male:
-    - dest: man_6 
-   microphone:
-    - dest: microphone 
-   weather-night:
-    - dest: moon 
-   run-fast:
-    - dest: motion 
-   cursor-move:
-    - dest: movecontrol 
-   wifi-off:
-    - dest: network-off 
-   wifi:
-    - dest: network-on 
-   wifi:
-    - dest: network 
-   ruler:
-    - dest: niveau 
-   x:
-    - dest: none 
-   library-books:
-    - dest: office 
-   oil:
-    - dest: oil 
-   spotlight-beam:
-    - dest: outdoorlight 
-   format-paint:
-    - dest: pantry 
-   human-male-female:
-    - dest: parents-off 
-   human-male-female:
-    - dest: parents_1_1 
-   human-male-female:
-    - dest: parents_1_2 
-   human-male-female:
-    - dest: parents_1_3 
-   human-male-female:
-    - dest: parents_1_4 
-   human-male-female:
-    - dest: parents_1_5 
-   human-male-female:
-    - dest: parents_1_6 
-   human-male-female:
-    - dest: parents_2_1 
-   human-male-female:
-    - dest: parents_2_2 
-   human-male-female:
-    - dest: parents_2_3 
-   human-male-female:
-    - dest: parents_2_4 
-   human-male-female:
-    - dest: parents_2_5 
-   human-male-female:
-    - dest: parents_2_6 
-   human-male-female:
-    - dest: parents_3_1 
-   human-male-female:
-    - dest: parents_3_2 
-   human-male-female:
-    - dest: parents_3_3 
-   human-male-female:
-    - dest: parents_3_4 
-   human-male-female:
-    - dest: parents_3_5 
-   human-male-female:
-    - dest: parents_3_6 
-   human-male-female:
-    - dest: parents_4_1 
-   human-male-female:
-    - dest: parents_4_2 
-   human-male-female:
-    - dest: parents_4_3 
-   human-male-female:
-    - dest: parents_4_4 
-   human-male-female:
-    - dest: parents_4_5 
-   human-male-female:
-    - dest: parents_4_6 
-   human-male-female:
-    - dest: parents_5_1 
-   human-male-female:
-    - dest: parents_5_2 
-   human-male-female:
-    - dest: parents_5_3 
-   human-male-female:
-    - dest: parents_5_4 
-   human-male-female:
-    - dest: parents_5_5 
-   human-male-female:
-    - dest: parents_5_6 
-   human-male-female:
-    - dest: parents_6_1 
-   human-male-female:
-    - dest: parents_6_2 
-   human-male-female:
-    - dest: parents_6_3 
-   human-male-female:
-    - dest: parents_6_4 
-   human-male-female:
-    - dest: parents_6_5 
-   human-male-female:
-    - dest: parents_6_6 
-   martini:
-    - dest: party 
-   chart-pie:
-    - dest: pie 
-   coin:
-    - dest: piggybank 
-   music:
-    - dest: player 
-   power-plug-off:
-    - dest: poweroutlet-off 
-   power-plug:
-    - dest: poweroutlet-on 
-   power-plug:
-    - dest: poweroutlet 
-   power-plug:
-    - dest: poweroutlet_au 
-   power-plug:
-    - dest: poweroutlet_eu 
-   power-plug:
-    - dest: poweroutlet_uk 
-   power-plug:
-    - dest: poweroutlet_us 
-   home-outline:
-    - dest: present-off 
-   home:
-    - dest: present 
-   gauge:
-    - dest: pressure 
-   projector:
-    - dest: projector_benq 
-   water-pump:
-    - dest: pump 
-   chart-areaspline:
-    - dest: qualityofservice 
-   radiator:
-    - dest: radiator 
-   weather-rainy:
-    - dest: rain 
-   led-variant-off:
-    - dest: receiver-off 
-   led-on:
-    - dest: receiver-on 
-   led-outline:
-    - dest: receiver 
-   microphone:
-    - dest: recorder 
-   arrow-down-bold:
-    - dest: returnpipe 
-   format-color-fill:
-    - dest: rgb 
-   blinds:
-    - dest: rollershutter 
-   settings:
-    - dest: settings 
-   emoticon-poop:
-    - dest: sewerage 
-   shield-outline:
-    - dest: shield-0 
-   shield:
-    - dest: shield-1 
-   shield-half-full:
-    - dest: shield 
-   signal:
-    - dest: signal 
-   bell-off:
-    - dest: siren-off 
-   bell-ring:
-    - dest: siren-on 
-   bell:
-    - dest: siren 
-   lightbulb:
-    - dest: slider 
-   emoticon-happy:
-    - dest: smiley 
-   x:
-    - dest: smoke 
-   sofa:
-    - dest: sofa 
-   cup-water:
-    - dest: softener 
-   white-balance-sunny:
-    - dest: solarplant 
-   volume-high:
-    - dest: soundvolume 
-   volume-off:
-    - dest: soundvolume_mute 
-   checkbox-marked-circle:
-    - dest: status 
-   briefcase:
-    - dest: suitcase 
-   weather-sunny:
-    - dest: sun 
-   weather-partlycloudy:
-    - dest: sun_clouds 
-   weather-sunset-up:
-    - dest: sunrise 
-   weather-sunset-down:
-    - dest: sunset 
-   toggle-switch-off:
-    - dest: switch-off 
-   toggle-switch-on:
-    - dest: switch-on 
-   toggle-switch-on:
-    - dest: switch 
-   television:
-    - dest: television-off 
-   television:
-    - dest: television-on 
-   television:
-    - dest: television 
-   thermometer:
-    - dest: temperature 
-   thermometer:
-    - dest: temperature_cold 
-   thermometer:
-    - dest: temperature_hot 
-   x:
-    - dest: terrace 
-   comment-text-outline:
-    - dest: text 
-   x:
-    - dest: toilet 
-   beach:
-    - dest: vacation 
-   video:
-    - dest: video 
-   toggle-switch-off:
-    - dest: wallswitch-off 
-   toggle-switch-on:
-    - dest: wallswitch-on 
-   toggle-switch-on:
-    - dest: wallswitch 
-   tshirt-crew:
-    - dest: wardrobe 
-   washing-machine:
-    - dest: washingmachine 
-   washing-machine:
-    - dest: washingmachine_2-0 
-   washing-machine:
-    - dest: washingmachine_2-1 
-   washing-machine:
-    - dest: washingmachine_2-2 
-   washing-machine:
-    - dest: washingmachine_2-3 
-   washing-machine:
-    - dest: washingmachine_2 
-   water:
-    - dest: water 
-   weather-windy:
-    - dest: wind 
-   window-open:
-    - dest: window-ajar 
-   window-closed:
-    - dest: window-closed 
-   window-open:
-    - dest: window-open 
-   window-closed:
-    - dest: window 
-   human-female:
-    - dest: woman_1 
-   human-female:
-    - dest: woman_2 
-   human-female:
-    - dest: woman_3 
-   human-female:
-    - dest: woman_4 
-   human-female:
-    - dest: woman_5 
-   human-female:
-    - dest: woman_6 
-   magnify:
-    - dest: zoom 
+  - alarm-light:
+    - dest: alarm
+  - stairs:
+    - dest: attic
+  - baby:
+    - dest: baby_1
+  - baby:
+    - dest: baby_2
+  - baby:
+    - dest: baby_3
+  - baby:
+    - dest: baby_4
+  - baby:
+    - dest: baby_5
+  - baby:
+    - dest: baby_6
+  - x:
+    - dest: bath
+  - battery-outline:
+    - dest: battery-0
+  - battery-10:
+    - dest: battery-10
+  - battery:
+    - dest: battery-100
+  - battery-20:
+    - dest: battery-20
+  - battery-30:
+    - dest: battery-30
+  - battery-40:
+    - dest: battery-40
+  - battery-50:
+    - dest: battery-50
+  - battery-60:
+    - dest: battery-60
+  - battery-70:
+    - dest: battery-70
+  - battery-80:
+    - dest: battery-80
+  - battery-90:
+    - dest: battery-90
+  - battery:
+    - dest: battery
+  - hotel:
+    - dest: bedroom
+  - hotel:
+    - dest: bedroom_blue
+  - hotel:
+    - dest: bedroom_orange
+  - hotel:
+    - dest: bedroom_red
+  - blinds:
+    - dest: blinds
+  - bluetooth:
+    - dest: bluetooth
+  - water-pump:
+    - dest: boiler_viessmann
+  - human-male:
+    - dest: boy_1
+  - human-male:
+    - dest: boy_2
+  - human-male:
+    - dest: boy_3
+  - human-male:
+    - dest: boy_4
+  - human-male:
+    - dest: boy_5
+  - human-male:
+    - dest: boy_6
+  - calendar:
+    - dest: calendar
+  - webcam:
+    - dest: camera
+  - periodic-table-co2:
+    - dest: carbondioxide
+  - x:
+    - dest: cellar
+  - chart-bar:
+    - dest: chart
+  - theater:
+    - dest: cinema
+  - projector-screen:
+    - dest: cinemascreen
+  - beaker:
+    - dest: cistern
+  - snowflake:
+    - dest: climate-on
+  - snowflake:
+    - dest: climate
+  - alarm-check:
+    - dest: clock-on
+  - alarm:
+    - dest: clock
+  - palette:
+    - dest: colorlight
+  - palette:
+    - dest: colorwheel
+  - window-open:
+    - dest: contact-ajar
+  - window-closed:
+    - dest: contact-closed
+  - window-open:
+    - dest: contact-open
+  - window-closed:
+    - dest: contact
+  - x:
+    - dest: corridor
+  - lightbulb:
+    - dest: dimmablelight
+  - x:
+    - dest: door-closed
+  - x:
+    - dest: door-open
+  - glassdoor:
+    - dest: door
+  - washing-machine:
+    - dest: dryer
+  - power:
+    - dest: energy
+  - alert:
+    - dest: error
+  - fan:
+    - dest: fan
+  - air-conditioner:
+    - dest: fan_box
+  - fan:
+    - dest: fan_ceiling
+  - water-pump:
+    - dest: faucet
+  - fire:
+    - dest: fire-off
+  - fire:
+    - dest: fire-on
+  - fire:
+    - dest: fire
+  - numeric-1-box-multiple-outline:
+    - dest: firstfloor
+  - waves:
+    - dest: flow
+  - arrow-up-bold:
+    - dest: flowpipe
+  - x:
+    - dest: frontdoor-closed
+  - x:
+    - dest: frontdoor-open
+  - x:
+    - dest: frontdoor
+  - garage:
+    - dest: garage
+  - garage:
+    - dest: garage_detached
+  - garage:
+    - dest: garage_detached_selected
+  - garage-open:
+    - dest: garagedoor-ajar
+  - garage:
+    - dest: garagedoor-closed
+  - garage-open:
+    - dest: garagedoor-open
+  - garage:
+    - dest: garagedoor
+  - tree:
+    - dest: garden
+  - gas-cylinder:
+    - dest: gas
+  - human-female:
+    - dest: girl_1
+  - human-female:
+    - dest: girl_2
+  - human-female:
+    - dest: girl_3
+  - human-female:
+    - dest: girl_4
+  - human-female:
+    - dest: girl_5
+  - human-female:
+    - dest: girl_6
+  - leaf:
+    - dest: grass
+  - x:
+    - dest: greenhouse
+  - numeric-0-box-multiple-outline:
+    - dest: groundfloor
+  - home:
+    - dest: group
+  - nest-thermostat:
+    - dest: heating-off
+  - nest-thermostat:
+    - dest: heating-on
+  - nest-thermostat:
+    - dest: heating
+  - home:
+    - dest: house
+  - water-percent:
+    - dest: humidity
+  - x:
+    - dest: incline
+  - key-variant:
+    - dest: keyring
+  - pot-mix:
+    - dest: kitchen
+  - lightbulb-outline:
+    - dest: light-off
+  - lightbulb-on:
+    - dest: light-on
+  - lightbulb:
+    - dest: light
+  - trending-down:
+    - dest: line-decline
+  - trending-up:
+    - dest: line-incline
+  - trending-neutral:
+    - dest: line-stagnation
+  - chart-line:
+    - dest: line
+  - lock:
+    - dest: lock-closed
+  - lock-unlocked:
+    - dest: lock-open
+  - lock:
+    - dest: lock
+  - human-male:
+    - dest: man_1
+  - human-male:
+    - dest: man_2
+  - human-male:
+    - dest: man_3
+  - human-male:
+    - dest: man_4
+  - human-male:
+    - dest: man_5
+  - human-male:
+    - dest: man_6
+  - microphone:
+    - dest: microphone
+  - weather-night:
+    - dest: moon
+  - run-fast:
+    - dest: motion
+  - cursor-move:
+    - dest: movecontrol
+  - wifi-off:
+    - dest: network-off
+  - wifi:
+    - dest: network-on
+  - wifi:
+    - dest: network
+  - ruler:
+    - dest: niveau
+  - x:
+    - dest: none
+  - library-books:
+    - dest: office
+  - oil:
+    - dest: oil
+  - spotlight-beam:
+    - dest: outdoorlight
+  - format-paint:
+    - dest: pantry
+  - human-male-female:
+    - dest: parents-off
+  - human-male-female:
+    - dest: parents_1_1
+  - human-male-female:
+    - dest: parents_1_2
+  - human-male-female:
+    - dest: parents_1_3
+  - human-male-female:
+    - dest: parents_1_4
+  - human-male-female:
+    - dest: parents_1_5
+  - human-male-female:
+    - dest: parents_1_6
+  - human-male-female:
+    - dest: parents_2_1
+  - human-male-female:
+    - dest: parents_2_2
+  - human-male-female:
+    - dest: parents_2_3
+  - human-male-female:
+    - dest: parents_2_4
+  - human-male-female:
+    - dest: parents_2_5
+  - human-male-female:
+    - dest: parents_2_6
+  - human-male-female:
+    - dest: parents_3_1
+  - human-male-female:
+    - dest: parents_3_2
+  - human-male-female:
+    - dest: parents_3_3
+  - human-male-female:
+    - dest: parents_3_4
+  - human-male-female:
+    - dest: parents_3_5
+  - human-male-female:
+    - dest: parents_3_6
+  - human-male-female:
+    - dest: parents_4_1
+  - human-male-female:
+    - dest: parents_4_2
+  - human-male-female:
+    - dest: parents_4_3
+  - human-male-female:
+    - dest: parents_4_4
+  - human-male-female:
+    - dest: parents_4_5
+  - human-male-female:
+    - dest: parents_4_6
+  - human-male-female:
+    - dest: parents_5_1
+  - human-male-female:
+    - dest: parents_5_2
+  - human-male-female:
+    - dest: parents_5_3
+  - human-male-female:
+    - dest: parents_5_4
+  - human-male-female:
+    - dest: parents_5_5
+  - human-male-female:
+    - dest: parents_5_6
+  - human-male-female:
+    - dest: parents_6_1
+  - human-male-female:
+    - dest: parents_6_2
+  - human-male-female:
+    - dest: parents_6_3
+  - human-male-female:
+    - dest: parents_6_4
+  - human-male-female:
+    - dest: parents_6_5
+  - human-male-female:
+    - dest: parents_6_6
+  - martini:
+    - dest: party
+  - chart-pie:
+    - dest: pie
+  - coin:
+    - dest: piggybank
+  - music:
+    - dest: player
+  - power-plug-off:
+    - dest: poweroutlet-off
+  - power-plug:
+    - dest: poweroutlet-on
+  - power-plug:
+    - dest: poweroutlet
+  - power-plug:
+    - dest: poweroutlet_au
+  - power-plug:
+    - dest: poweroutlet_eu
+  - power-plug:
+    - dest: poweroutlet_uk
+  - power-plug:
+    - dest: poweroutlet_us
+  - home-outline:
+    - dest: present-off
+  - home:
+    - dest: present
+  - gauge:
+    - dest: pressure
+  - projector:
+    - dest: projector_benq
+  - water-pump:
+    - dest: pump
+  - chart-areaspline:
+    - dest: qualityofservice
+  - radiator:
+    - dest: radiator
+  - weather-rainy:
+    - dest: rain
+  - led-variant-off:
+    - dest: receiver-off
+  - led-on:
+    - dest: receiver-on
+  - led-outline:
+    - dest: receiver
+  - microphone:
+    - dest: recorder
+  - arrow-down-bold:
+    - dest: returnpipe
+  - format-color-fill:
+    - dest: rgb
+  - blinds:
+    - dest: rollershutter
+  - settings:
+    - dest: settings
+  - emoticon-poop:
+    - dest: sewerage
+  - shield-outline:
+    - dest: shield-0
+  - shield:
+    - dest: shield-1
+  - shield-half-full:
+    - dest: shield
+  - signal:
+    - dest: signal
+  - bell-off:
+    - dest: siren-off
+  - bell-ring:
+    - dest: siren-on
+  - bell:
+    - dest: siren
+  - lightbulb:
+    - dest: slider
+  - emoticon-happy:
+    - dest: smiley
+  - x:
+    - dest: smoke
+  - sofa:
+    - dest: sofa
+  - cup-water:
+    - dest: softener
+  - white-balance-sunny:
+    - dest: solarplant
+  - volume-high:
+    - dest: soundvolume
+  - volume-off:
+    - dest: soundvolume_mute
+  - checkbox-marked-circle:
+    - dest: status
+  - briefcase:
+    - dest: suitcase
+  - weather-sunny:
+    - dest: sun
+  - weather-partlycloudy:
+    - dest: sun_clouds
+  - weather-sunset-up:
+    - dest: sunrise
+  - weather-sunset-down:
+    - dest: sunset
+  - toggle-switch-off:
+    - dest: switch-off
+  - toggle-switch-on:
+    - dest: switch-on
+  - toggle-switch-on:
+    - dest: switch
+  - television:
+    - dest: television-off
+  - television:
+    - dest: television-on
+  - television:
+    - dest: television
+  - thermometer:
+    - dest: temperature
+  - thermometer:
+    - dest: temperature_cold
+  - thermometer:
+    - dest: temperature_hot
+  - x:
+    - dest: terrace
+  - comment-text-outline:
+    - dest: text
+  - x:
+    - dest: toilet
+  - beach:
+    - dest: vacation
+  - video:
+    - dest: video
+  - toggle-switch-off:
+    - dest: wallswitch-off
+  - toggle-switch-on:
+    - dest: wallswitch-on
+  - toggle-switch-on:
+    - dest: wallswitch
+  - tshirt-crew:
+    - dest: wardrobe
+  - washing-machine:
+    - dest: washingmachine
+  - washing-machine:
+    - dest: washingmachine_2-0
+  - washing-machine:
+    - dest: washingmachine_2-1
+  - washing-machine:
+    - dest: washingmachine_2-2
+  - washing-machine:
+    - dest: washingmachine_2-3
+  - washing-machine:
+    - dest: washingmachine_2
+  - water:
+    - dest: water
+  - weather-windy:
+    - dest: wind
+  - window-open:
+    - dest: window-ajar
+  - window-closed:
+    - dest: window-closed
+  - window-open:
+    - dest: window-open
+  - window-closed:
+    - dest: window
+  - human-female:
+    - dest: woman_1
+  - human-female:
+    - dest: woman_2
+  - human-female:
+    - dest: woman_3
+  - human-female:
+    - dest: woman_4
+  - human-female:
+    - dest: woman_5
+  - human-female:
+    - dest: woman_6
+  - magnify:
+    - dest: zoom
