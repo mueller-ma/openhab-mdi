@@ -25,6 +25,14 @@ The icon colors used are:
 - blue: "#0000CD" (medium blue)
 - grey: "#C0C0C0" (silver)
 
+Skin colors (based on [emoji](http://blog.emojipedia.org/apple-2015-emoji-changelog-ios-os-x/)):
+
+- skin type 1 and 2: "#FFDBB6"
+- skin type 3: "#ECBA8D"
+- skin type 4: "#CF8B5D"
+- skin type 5: "#AD5C2B"
+- skin type 6: "#614235"
+
 Icon colors follow the dynamic state or value when possible. For example:
 
 - Switch ON = green
