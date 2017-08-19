@@ -80,3 +80,7 @@ To build the iconset:
 ## Using the iconset
 
 That's easy. Just copy all files from the `iconset` folder to your openHAB configuration in the folder `icons/classic`.
+
+## TODO
+
+- Create intermediate folders for output. For now these need to be created manually before the script is run.
