@@ -105,6 +105,8 @@ def main(argv):
 
     args = get_parser().parse_args()
 
+    args.output_path = args.output_path + "/" + os.path.splitext(os.path.basename(args.filename))[0]
+
     if (args.empty):
         # remove all files in output folder
         if (args.dryrun):
@@ -112,19 +114,16 @@ def main(argv):
         else:
             empty_folder(args.output_path, args.verbose)
 
-
     with open(args.filename) as f:
         try:
             doc = yaml.safe_load(f)
             f.close()
             for mdi in doc['mdi']:
-                for source in mdi:
-                    for dest in mdi[source]:
+                for sourcename in mdi:
+                    for destname in mdi[sourcename]:
 
-                        # copy source to destination
-                        srcfile = args.input_path + '/' + source + '.svg'
-                        dstfile = args.output_path + '/' + dest['dest'] + '.svg'
-
+                        srcfile = args.input_path + '/' + sourcename + '.svg'
+                        dstfile = args.output_path + '/' + destname['dest'] + '.svg'
 
                         # copy file
                         if args.dryrun:
@@ -135,18 +134,18 @@ def main(argv):
                             svg_copy(srcfile, dstfile)
 
                         #modify color of destination file
-                        if 'color' in dest:
+                        if 'color' in destname:
                             if args.dryrun:
-                                print('Color of file ' + dstfile + ' would have replaced with ' + dest['color'])
+                                print('Color of file ' + dstfile + ' would have replaced with ' + destname['color'])
                             else:
                                 if args.verbose:
-                                    print('Replace icon color with ' + dest['color'])
-                                svg_replace_fill(dstfile, '#000000', dest['color'])
+                                    print('Replace icon color with ' + destname['color'])
+                                svg_replace_fill(dstfile, '#000000', destname['color'])
 
                         # create aliases
-                        if 'alias' in dest:
-                            for alias in dest['alias']:
-                                srcfile = args.output_path + '/' + dest['dest'] + '.svg'
+                        if 'alias' in destname:
+                            for alias in destname['alias']:
+                                srcfile = args.output_path + '/' + destname['dest'] + '.svg'
                                 dstfile = args.output_path + '/' + alias + '.svg'
                                 if args.dryrun:
                                     print('Alias ' + dstfile + ' would have created for ' + srcfile)
