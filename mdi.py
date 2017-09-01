@@ -114,6 +114,12 @@ def main(argv):
         else:
             empty_folder(args.output_path, args.verbose)
 
+    # fill sample variable with the created icons, to be output for documentation purposes.
+    sample = ""
+    sample += "# Icons sample\n\n"
+    sample += "Icon | Sample\n"
+    sample += " --- | --- \n"
+
     with open(args.filename) as f:
         try:
             doc = yaml.safe_load(f)
@@ -132,11 +138,12 @@ def main(argv):
                             if args.verbose:
                                 print('Copy ' + srcfile + ' to ' + dstfile)
                             svg_copy(srcfile, dstfile)
+                            sample +=  destname['dest'] + " | ![" + destname['dest'] + "](file://" + dstfile +") \n"
 
-                        #modify color of destination file
+                        # modify color of destination file
                         if 'color' in destname:
                             if args.dryrun:
-                                print('Color of file ' + dstfile + ' would have replaced with ' + destname['color'])
+                                print('Color of file ' + dstfile + ' would have been replaced with ' + destname['color'])
                             else:
                                 if args.verbose:
                                     print('Replace icon color with ' + destname['color'])
@@ -148,11 +155,15 @@ def main(argv):
                                 srcfile = args.output_path + '/' + destname['dest'] + '.svg'
                                 dstfile = args.output_path + '/' + alias + '.svg'
                                 if args.dryrun:
-                                    print('Alias ' + dstfile + ' would have created for ' + srcfile)
+                                    print('Alias ' + dstfile + ' would have been created for ' + srcfile)
                                 else:
                                     if args.verbose:
                                         print('Create alias ' + dstfile)
                                     svg_copy(srcfile, dstfile)
+                                    sample +=  alias + " | ![" + alias + "](file://" + dstfile +") \n"
+
+            # future feature: print iconset sample as md document
+            # print(sample)
 
         except yaml.YAMLError as exc:
             print(exc)
