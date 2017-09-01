@@ -9,7 +9,11 @@ Install the required libraries:
 pip3 install -r requirements.txt
 ```
 
-The script expects the source icons in a sub folder `download` of the script location. [Download the repo as a ZIP](https://github.com/Templarian/MaterialDesign/archive/master.zip) and extract it there first.
+Download this repository with
+```
+git clone --recursive https://github.com/metbril/openhab-mdi.git
+```
+
 
 ## Design
 
