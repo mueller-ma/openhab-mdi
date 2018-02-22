@@ -257,7 +257,7 @@ mdi:
     - dest: car
   - robot:
     - dest: cleaningrobot # todo: find a better icon
-    - air-conditioner:
+  - air-conditioner:
     - dest: hvac
   - radio:
     - dest: receiver
@@ -363,7 +363,7 @@ mdi:
       - lock-close # todo close or closed? color?
   - lock-open:
     - dest: lock-open
- server:
+  - server:
     - dest: server
   - projector-screen:
     - dest: cinemascreen
