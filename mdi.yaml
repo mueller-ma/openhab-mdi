@@ -59,8 +59,8 @@ mdi:
       color: "#32CD32"
   - battery-outline:
     - dest: battery
-      alias:
-        - battery-0
+    - dest: battery-0
+      color: "#DC143C"
   - battery-10:
     - dest: battery-10
       color: "#DC143C"
@@ -103,7 +103,7 @@ mdi:
     - dest: bedroom
   - blinds:
     - dest: blinds
-      alias:
+      alias: # todo add colors
         - blinds-0
         - blinds-10
         - blinds-20
@@ -184,7 +184,20 @@ mdi:
     - dest: switch
     - dest: switch-on
       color: "#32CD32"
-    - dest: swith-off
+    - dest: switch-off
+      color: "#DC143C"
+  - power-plug:
+    - dest: poweroutlet
+    - dest: poweroutlet-on
+      color: "#32CD32"
+  - power-plug-off:
+    - dest: poweroutlet-off
+      color: "#DC143C"
+  - radiator:
+    - dest: radiatorcontrol
+    - dest: radiatorcontrol-on
+      color: "#32CD32"
+    - dest: radiatorcontrol-off
       color: "#DC143C"
   - signal:
     - dest: signal
@@ -210,6 +223,8 @@ mdi:
   - wifi-off:
     - dest: network-off
       color: "#DC143C"
+  - network:
+    - dest: networkappliance
   - home:
     - dest: house
       alias:
@@ -236,6 +251,14 @@ mdi:
     - dest: pressure
   - memory:
     - dest: memory
+  - webcam:
+    - dest: camera
+  - car:
+    - dest: car
+  - robot:
+    - dest: cleaningrobot # todo: find a better icon
+    - air-conditioner:
+    - dest: hvac
   - radio:
     - dest: receiver
       alias:
@@ -244,14 +267,22 @@ mdi:
       color: "#32CD32"
     - dest: receiver-off
       color: "#DC143C"
+  - remote:
+    - dest: remotecontrol
   - run-fast:
     - dest: motion
+      alias:
+      - motiondetector
   - tree:
     - dest: garden
   - gas-cylinder:
     - dest: gas
   - sofa:
     - dest: sofa
+      alias:
+      - livingroom
+  - stove:
+    - dest: kitchen
   - thermometer:
     - dest: temperature
   - weather-sunset-up:
@@ -267,7 +298,7 @@ mdi:
   - settings:
     - dest: settings
   - lightbulb:
-    - dest: light-0
+    - dest: light-0 # todo: add color here?
       alias:
       - light
       - light-off
@@ -326,7 +357,13 @@ mdi:
       alias:
       - dimmablelight-10
       - slider-10
-  - server:
+  - lock:
+    - dest: lock
+      alias:
+      - lock-close # todo close or closed? color?
+  - lock-open:
+    - dest: lock-open
+ server:
     - dest: server
   - projector-screen:
     - dest: cinemascreen
