@@ -20,12 +20,12 @@ mdi:
       alias:
         - siren
     - dest: alarm-off
-      colorState: green
+      colorState: red
       alias:
         - siren-off
   - bell-ring:
     - dest: alarm-on
-      colorState: red
+      colorState: green
       alias:
         - siren-on
   - water:
