@@ -1,5 +1,7 @@
 # openHAB Material Design Icons
 
+[![Build Status](https://travis-ci.org/mueller-ma/openhab-mdi.svg?branch=master)](https://travis-ci.org/mueller-ma/openhab-mdi)
+
 This project creates a set of icons for use with [openHAB 2](https://www.openhab.org) from the [Material Design Icons](https://www.materialdesignicons.com) (MDI).
 
 ## Pre-requisites
