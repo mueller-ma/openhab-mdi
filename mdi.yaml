@@ -166,6 +166,8 @@ mdi:
     - dest: cinema
   - garage:
     - dest: garagedoor
+      alias:
+      - garage
     - dest: garagedoor-closed
       colorState: green
       alias:
