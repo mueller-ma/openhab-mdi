@@ -380,7 +380,7 @@ mdi:
     - dest: soundvolume
   - volume-off:
     - dest: soundvolume_mute
-  - toggle-switch-on:
+  - toggle-switch:
     - dest: wallswitch
     - dest: wallswitch-on
       color: "#32CD32"
