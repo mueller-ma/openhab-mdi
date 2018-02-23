@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 for file in "${1}"*.svg; do
 
