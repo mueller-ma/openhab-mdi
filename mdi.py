@@ -141,13 +141,13 @@ def main(argv):
                             sample +=  destname['dest'] + " | ![" + destname['dest'] + "](file://" + dstfile +") \n"
 
                         # modify color of destination file
-                        if 'color' in destname:
+                        if 'colorState' in destname:
                             if args.dryrun:
-                                print('Color of file ' + dstfile + ' would have been replaced with ' + destname['color'])
+                                print('Color of file ' + dstfile + ' would have been replaced with ' + destname['colorState'])
                             else:
                                 if args.verbose:
-                                    print('Replace icon color with ' + destname['color'])
-                                svg_replace_fill(dstfile, '#000000', destname['color'])
+                                    print('Replace icon color with ' + destname['colorState'])
+                                svg_replace_fill(dstfile, '#000000', destname['colorState'])
 
                         # create aliases
                         if 'alias' in destname:

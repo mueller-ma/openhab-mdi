@@ -4,28 +4,28 @@ mdi:
   - text-to-speech:
     - dest: tts
     - dest: tts-on
-      color: "#32CD32"
+      colorState: "#32CD32"
   - text-to-speech-off:
     - dest: tts-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - music:
     - dest: music
     - dest: music-on
-      color: "#32CD32"
+      colorState: "#32CD32"
   - music-off:
     - dest: music-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - bell:
     - dest: alarm
       alias:
         - siren
     - dest: alarm-off
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
         - siren-off
   - bell-ring:
     - dest: alarm-on
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
         - siren-on
   - water:
@@ -33,18 +33,18 @@ mdi:
   - water-percent:
     - dest: humidity
     - dest: humidity-0
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
         - humidity-10
         - humidity-20
         - humidity-30
     - dest: humidity-40
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
         - humidity-50
         - humidity-60
     - dest: humidity-70
-      color: "#0000CD"
+      colorState: "#0000CD"
       alias:
         - humidity-80
         - humidity-90
@@ -57,64 +57,64 @@ mdi:
   - bell:
     - dest: alarm
     - dest: alarm-on
-      color: "#DC143C"
+      colorState: "#DC143C"
     - dest: alarm-off
-      color: "#32CD32"
+      colorState: "#32CD32"
   - battery-outline:
     - dest: battery
     - dest: battery-0
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
       - batterylevel-0
       - lowbattery
   - battery-10:
     - dest: battery-10
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
       - batterylevel-10
   - battery-20:
     - dest: battery-20
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
       - batterylevel-20
   - battery-30:
     - dest: battery-30
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
       - batterylevel-30
   - battery-40:
     - dest: battery-40
-      color: "#FFD700"
+      colorState: "#FFD700"
       alias:
       - batterylevel-40
   - battery-50:
     - dest: battery-50
-      color: "#FFD700"
+      colorState: "#FFD700"
       alias:
       - batterylevel-50
   - battery-60:
     - dest: battery-60
-      color: "#FFD700"
+      colorState: "#FFD700"
       alias:
       - batterylevel-60
   - battery-70:
     - dest: battery-70
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
       - batterylevel-70
   - battery-80:
     - dest: battery-80
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
       - batterylevel-80
   - battery-90:
     - dest: battery-90
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
       - batterylevel-90
   - battery:
     - dest: battery-100
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
         - battery-on
         - batterylevel-100
@@ -125,7 +125,7 @@ mdi:
       alias:
       - fire-on
     - dest: fire-off
-      color: grey
+      colorState: grey
   - hotel:
     - dest: bedroom
   - blinds:
@@ -165,12 +165,12 @@ mdi:
   - garage:
     - dest: garagedoor
     - dest: garagedoor-closed
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
         - garagedoor-100
   - garage-open:
     - dest: garagedoor-open
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
         - garagedoor-0
         - garagedoor-10
@@ -187,11 +187,11 @@ mdi:
       alias:
         - frontdoor
     - dest: door-open
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
         - frontdoor-open
     - dest: door-closed
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
         - frontdoor-closed
   - clock:
@@ -199,19 +199,19 @@ mdi:
       alias:
       - time
     - dest: clock-on
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
       - time-on
     - dest: clock-off
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
       - time-off
   - nest-thermostat:
     - dest: heating
     - dest: heating-on
-      color: "#32CD32"
+      colorState: "#32CD32"
     - dest: heating-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - movie:
     - dest: mediacontrol
       alias:
@@ -238,26 +238,26 @@ mdi:
   - power:
     - dest: switch
     - dest: switch-on
-      color: "#32CD32"
+      colorState: "#32CD32"
     - dest: switch-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - power-plug:
     - dest: poweroutlet
     - dest: poweroutlet-on
-      color: "#32CD32"
+      colorState: "#32CD32"
   - power-plug-off:
     - dest: poweroutlet-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - radiator:
     - dest: radiatorcontrol
       alias:
       - radiator
     - dest: radiatorcontrol-on
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
       - radiator-on
     - dest: radiatorcontrol-off
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
       - radiator-off
   - signal:
@@ -265,25 +265,25 @@ mdi:
       alias:
         - signal-on
     - dest: signal-0
-      color: "#DC143C"
+      colorState: "#DC143C"
     - dest: signal-1
-      color: "#DC143C"
+      colorState: "#DC143C"
     - dest: signal-2
-      color: orange
+      colorState: orange
     - dest: signal-3
-      color: "#FFD700"
+      colorState: "#FFD700"
     - dest: signal-4
-      color: "#32CD32"
+      colorState: "#32CD32"
   - signal-off:
     - dest: signal-off
-      color: grey
+      colorState: grey
   - wifi:
     - dest: network
     - dest: network-on
-      color: "#32CD32"
+      colorState: "#32CD32"
   - wifi-off:
     - dest: network-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - network:
     - dest: networkappliance
   - ruler:
@@ -297,15 +297,15 @@ mdi:
       alias:
       - group
     - dest: present
-      color: grey
+      colorState: grey
       alias:
       - presence
     - dest: present-on
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
       - presence-on
     - dest: present-off
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
       - presence-off
   - key-variant:
@@ -319,9 +319,9 @@ mdi:
   - shield:
     - dest: shield
     - dest: shield-on
-      color: "#32CD32"
+      colorState: "#32CD32"
     - dest: shield-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - alphabetical:
     - dest: text
   - numeric:
@@ -345,37 +345,37 @@ mdi:
   - television:
     - dest: screen
     - dest: screen-on
-      color: "#32CD32"
+      colorState: "#32CD32"
     - dest: screen-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - bell:
     - dest: siren
   - bell-ring:
     - dest: siren-on
-      color: "#32CD32"
+      colorState: "#32CD32"
   - bell-off:
     - dest: siren-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - smoking:
     - dest: smokedetector
       alias:
       - smoke
     - dest: smokedetector-on
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
       - smoke-on
   - smoking-off:
     - dest: smokedetector-off
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
       - smoke-off
   - speaker:
     - dest: speaker
     - dest: speaker-on
-      color: "#32CD32"
+      colorState: "#32CD32"
   - speaker-off:
     - dest: speaker-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - volume-high: # todo add 0 to 100 and on/off icons
     - dest: soundvolume
   - volume-off:
@@ -383,27 +383,27 @@ mdi:
   - toggle-switch:
     - dest: wallswitch
     - dest: wallswitch-on
-      color: "#32CD32"
+      colorState: "#32CD32"
   - toggle-switch-off:
     - dest: wallswitch-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - web:
     - dest: webservice
     - dest: webservice-on
-      color: "#32CD32"
+      colorState: "#32CD32"
     - dest: webservice-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - window-closed:
     - dest: window
       alias:
       - contact
     - dest: window-closed
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
       - contact-closed
   - window-open:
     - dest: window-open
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
       - window-ajar
       - contact-open
@@ -415,14 +415,14 @@ mdi:
       - washingmachine
       - washingmachine_2
     - dest: whitegood-on
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
       - dryer-on
       - washingmachine-on
       - washingmachine_2-1
       - washingmachine_2-2
     - dest: whitegood-off
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
       - dryer-off
       - washingmachine
@@ -439,11 +439,11 @@ mdi:
       alias:
       - player
     - dest: receiver-on
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
       - player-on
     - dest: receiver-off
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
       - player-off
   - remote:
@@ -514,53 +514,53 @@ mdi:
       - dimmablelight-0
       - slider-0
     - dest: light-100
-      color: "#FFD700" # "#FFD700"
+      colorState: "#FFD700" # "#FFD700"
       alias:
       - light-on
       - dimmablelight-100
       - slider-100
     - dest: light-90
-      color: "#E5C100" # gradient
+      colorState: "#E5C100" # gradient
       alias:
       - dimmablelight-90
       - slider-90
     - dest: light-80
-      color: "#CCAC00" # gradient
+      colorState: "#CCAC00" # gradient
       alias:
       - dimmablelight-80
       - slider-80
     - dest: light-70
-      color: "#B29600" # gradient
+      colorState: "#B29600" # gradient
       alias:
       - dimmablelight-70
       - slider-70
     - dest: light-60
-      color: "#998100" # gradient
+      colorState: "#998100" # gradient
       alias:
       - dimmablelight-60
       - slider-60
     - dest: light-50
-      color: "#7F6B00" # gradient
+      colorState: "#7F6B00" # gradient
       alias:
       - dimmablelight-50
       - slider-50
     - dest: light-40
-      color: "#665600" # gradient
+      colorState: "#665600" # gradient
       alias:
       - dimmablelight-40
       - slider-40
     - dest: light-30
-      color: "#4C4000" # gradient
+      colorState: "#4C4000" # gradient
       alias:
       - dimmablelight-30
       - slider-30
     - dest: light-20
-      color: "#332B00" # gradient
+      colorState: "#332B00" # gradient
       alias:
       - dimmablelight-20
       - slider-20
     - dest: light-10
-      color: "#191500" # gradient
+      colorState: "#191500" # gradient
       alias:
       - dimmablelight-10
       - slider-10
@@ -591,9 +591,9 @@ mdi:
       alias:
       - snow
     - dest: climate-on
-      color: "#32CD32"
+      colorState: "#32CD32"
     - dest: climate-off
-      color: "#DC143C"
+      colorState: "#DC143C"
   - cloud-upload:
     - dest: upload
   - cloud-download:
@@ -603,81 +603,81 @@ mdi:
   - autorenew:
     - dest: job
     - dest: job-on
-      color: "#32CD32"
+      colorState: "#32CD32"
       alias:
         - job-running
     - dest: job-off
-      color: "#DC143C"
+      colorState: "#DC143C"
       alias:
         - job-error
     - dest: job-processing
-      color: "#0000CD"
+      colorState: "#0000CD"
   - baby:
     - dest: baby_1
-      color: "#F4D0B1"
+      colorState: "#F4D0B1"
     - dest: baby_2
-      color: "#E7B48F"
+      colorState: "#E7B48F"
     - dest: baby_3
-      color: "#D29E7C"
+      colorState: "#D29E7C"
     - dest: baby_4
-      color: "#BA7750"
+      colorState: "#BA7750"
     - dest: baby_5
-      color: "#A55D2B"
+      colorState: "#A55D2B"
     - dest: baby_6
-      color: "#3C201D"
+      colorState: "#3C201D"
   - human-male:
     - dest: boy_1
-      color: "#F4D0B1"
+      colorState: "#F4D0B1"
       alias:
       - man_1
     - dest: boy_2
-      color: "#E7B48F"
+      colorState: "#E7B48F"
       alias:
       - man_2
     - dest: boy_3
-      color: "#D29E7C"
+      colorState: "#D29E7C"
       alias:
       - man_3
     - dest: boy_4
-      color: "#BA7750"
+      colorState: "#BA7750"
       alias:
       - man_4
     - dest: boy_5
-      color: "#A55D2B"
+      colorState: "#A55D2B"
       alias:
       - man_5
     - dest: boy_6
-      color: "#3C201D"
+      colorState: "#3C201D"
       alias:
       - man_6
   - human-female:
     - dest: girl_1
-      color: "#F4D0B1"
+      colorState: "#F4D0B1"
       alias:
       - woman_1
     - dest: girl_2
-      color: "#E7B48F"
+      colorState: "#E7B48F"
       alias:
       - woman_2
     - dest: girl_3
-      color: "#D29E7C"
+      colorState: "#D29E7C"
       alias:
       - woman_3
     - dest: girl_4
-      color: "#BA7750"
+      colorState: "#BA7750"
       alias:
       - woman_4
     - dest: girl_5
-      color: "#A55D2B"
+      colorState: "#A55D2B"
       alias:
       - woman_5
     - dest: girl_6
-      color: "#3C201D"
+      colorState: "#3C201D"
       alias:
       - woman_6
   - human-male-female:
     - dest: parents_1_1
-      color: "#F4D0B1"
+      colorState: "#F4D0B1"
       alias:
       - parents_1_2
       - parents_1_3
@@ -685,7 +685,7 @@ mdi:
       - parents_1_5
       - parents_1_6
     - dest: parents_2
-      color: "#E7B48F"
+      colorState: "#E7B48F"
       alias:
       - parents_2_2
       - parents_2_3
@@ -693,7 +693,7 @@ mdi:
       - parents_2_5
       - parents_2_6
     - dest: parents_3
-      color: "#D29E7C"
+      colorState: "#D29E7C"
       alias:
       - parents_3_2
       - parents_3_3
@@ -701,7 +701,7 @@ mdi:
       - parents_3_5
       - parents_3_6
     - dest: parents_4
-      color: "#BA7750"
+      colorState: "#BA7750"
       alias:
       - parents_4_2
       - parents_4_3
@@ -709,7 +709,7 @@ mdi:
       - parents_4_5
       - parents_4_6
     - dest: parents_5
-      color: "#A55D2B"
+      colorState: "#A55D2B"
       alias:
       - parents_5_2
       - parents_5_3
@@ -717,7 +717,7 @@ mdi:
       - parents_5_5
       - parents_5_6
     - dest: parents_6
-      color: "#3C201D"
+      colorState: "#3C201D"
       alias:
       - parents_6_2
       - parents_6_3
