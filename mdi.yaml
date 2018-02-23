@@ -28,6 +28,8 @@ mdi:
       color: "#DC143C"
       alias:
         - siren-on
+  - water:
+    - dest: water
   - water-percent:
     - dest: humidity
     - dest: humidity-0
@@ -51,6 +53,7 @@ mdi:
     - dest: colorlight
       alias:
         - colorwheel
+        - colorpicker
   - bell:
     - dest: alarm
     - dest: alarm-on
@@ -61,42 +64,66 @@ mdi:
     - dest: battery
     - dest: battery-0
       color: "#DC143C"
+      alias:
+      - batterylevel-0
+      - lowbattery
   - battery-10:
     - dest: battery-10
       color: "#DC143C"
+      alias:
+      - batterylevel-10
   - battery-20:
     - dest: battery-20
       color: "#DC143C"
+      alias:
+      - batterylevel-20
   - battery-30:
     - dest: battery-30
       color: "#DC143C"
+      alias:
+      - batterylevel-30
   - battery-40:
     - dest: battery-40
       color: "#FFD700"
+      alias:
+      - batterylevel-40
   - battery-50:
     - dest: battery-50
       color: "#FFD700"
+      alias:
+      - batterylevel-50
   - battery-60:
     - dest: battery-60
       color: "#FFD700"
+      alias:
+      - batterylevel-60
   - battery-70:
     - dest: battery-70
       color: "#32CD32"
+      alias:
+      - batterylevel-70
   - battery-80:
     - dest: battery-80
       color: "#32CD32"
+      alias:
+      - batterylevel-80
   - battery-90:
     - dest: battery-90
       color: "#32CD32"
+      alias:
+      - batterylevel-90
   - battery:
     - dest: battery-100
       color: "#32CD32"
       alias:
         - battery-on
+        - batterylevel-100
+  - periodic-table-co2:
+    - dest: carbondioxide
   - fire:
     - dest: fire
       alias:
-        - fire-on
+      - fire-on
     - dest: fire-off
       color: grey
   - hotel:
@@ -169,8 +196,28 @@ mdi:
         - frontdoor-closed
   - clock:
     - dest: clock
+      alias:
+      - time
     - dest: clock-on
       color: "#32CD32"
+      alias:
+      - time-on
+    - dest: clock-off
+      color: "#DC143C"
+      alias:
+      - time-off
+  - nest-thermostat:
+    - dest: heating
+    - dest: heating-on
+      color: "#32CD32"
+    - dest: heating-off
+      color: "#DC143C"
+  - movie:
+    - dest: mediacontrol
+  - cursor-move:
+    - dest: movecontrol
+  - magnify:
+    - dest: zoom
   - flash:
     - dest: energy
   - alert:
@@ -231,10 +278,20 @@ mdi:
       - group
     - dest: present
       color: grey
+      alias:
+      - presence
     - dest: present-on
       color: "#32CD32"
+      alias:
+      - presence-on
     - dest: present-off
       color: "#DC143C"
+      alias:
+      - presence-off
+  - beach:
+    - dest: vacation
+  - martini:
+    - dest: party
   - shield:
     - dest: shield
     - dest: shield-on
@@ -251,8 +308,74 @@ mdi:
     - dest: pressure
   - memory:
     - dest: memory
-  - webcam:
+  - cctv:
     - dest: camera
+  - television:
+    - dest: screen
+    - dest: screen-on
+      color: "#32CD32"
+    - dest: screen-off
+      color: "#DC143C"
+  - bell:
+    - dest: siren
+  - bell-ring:
+    - dest: siren-on
+      color: "#32CD32"
+  - bell-off:
+    - dest: siren-off
+      color: "#DC143C"
+  - smoking:
+    - dest: smokedetector
+      alias:
+      - smoke
+    - dest: smokedetector-on
+      color: "#32CD32"
+      alias:
+      - smoke-on
+  - smoking-off:
+    - dest: smokedetector-off
+      color: "#DC143C"
+      alias:
+      - smoke-off
+  - speaker:
+    - dest: speaker
+    - dest: speaker-on
+      color: "#32CD32"
+  - speaker-off:
+    - dest: speaker-off
+      color: "#DC143C"
+  - volume-high: # todo add 0 to 100 and on/off icons
+    - dest: soundvolume
+  - volume-off:
+    - dest: soundvolume_mute
+  - toggle-switch-on:
+    - dest: wallswitch
+    - dest: wallswitch-on
+      color: "#32CD32"
+  - toggle-switch-off:
+    - dest: wallswitch-off
+      color: "#DC143C"
+  - web:
+    - dest: webservice
+    - dest: webservice-on
+      color: "#32CD32"
+    - dest: webservice-off
+      color: "#DC143C"
+  - window-closed:
+    - dest: window
+    - dest: window-closed
+      color: "#32CD32"
+  - window-open:
+    - dest: window-open
+      color: "#DC143C"
+      alias:
+      - window-ajar
+  - washing-machine:
+    - dest: whitegood
+    - dest: whitegood-on
+      color: "#32CD32"
+    - dest: whitegood-off
+      color: "#DC143C"
   - car:
     - dest: car
   - robot:
@@ -273,10 +396,20 @@ mdi:
     - dest: motion
       alias:
       - motiondetector
+  - chart-areaspline:
+    - dest: qualityofservice
+  - waves:
+    - dest: flow
+  - coin:
+    - dest: piggybank
+      alias:
+      - price
   - tree:
     - dest: garden
   - gas-cylinder:
     - dest: gas
+  - oil:
+    - dest: oil
   - sofa:
     - dest: sofa
       alias:
@@ -285,6 +418,8 @@ mdi:
     - dest: kitchen
   - thermometer:
     - dest: temperature
+  - weather-sunny:
+    - dest: sun
   - weather-sunset-up:
     - dest: sunrise
   - weather-sunset-down:
@@ -295,6 +430,10 @@ mdi:
     - dest: rain
   - weather-windy:
     - dest: wind
+  - weather-night:
+    - dest: moon
+  - cloud:
+    - dest: cloud
   - settings:
     - dest: settings
   - lightbulb:
@@ -360,7 +499,7 @@ mdi:
   - lock:
     - dest: lock
       alias:
-      - lock-close # todo close or closed? color?
+      - lock-closed
   - lock-open:
     - dest: lock-open
   - server:
@@ -381,6 +520,8 @@ mdi:
     - dest: cinemascreen-90
   - snowflake:
     - dest: climate
+      alias:
+      - snow
     - dest: climate-on
       color: "#0000CD"
   - cloud-upload:

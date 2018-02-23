@@ -9,3 +9,12 @@ https://www.eclipse.org/smarthome/documentation/features/ui/iconset/classic/read
 # Things
  * inverter
  * lawnmower
+ * sensor
+ * smokedetector (currently same as smoke)
+
+# Channels
+## Widgets
+ * colorpicker (currently same as colorlight)
+## Properties
+ * moisture (maybe some alias to humidity)
+ * noise
