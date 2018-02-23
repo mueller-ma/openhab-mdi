@@ -1,0 +1,4 @@
+[submodule "download/MaterialDesign"]
+	path = download/MaterialDesign
+	url = https://github.com/Templarian/MaterialDesign/
+	branch = master

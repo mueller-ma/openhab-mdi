@@ -75,7 +75,7 @@ def get_parser():
     parser.add_argument("-i", "--input-path",
                         dest="input_path",
                         type=lambda x: is_valid_file(parser, x),
-                        default=pwd + "/download/MaterialDesign-master/icons/svg",
+                        default=pwd + "/download/MaterialDesign/icons/svg",
                         metavar="INPUT-PATH",
                         help="read icons from INPUT-PATH")
     parser.add_argument("-o", "--output-path",

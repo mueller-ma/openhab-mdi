@@ -4,9 +4,5 @@
 # macOS - Thumbnails
 ._*
 
-# exclude source and destination folders
-download/
-iconset/
-
 # Visual Studio Code
 .vscode/
