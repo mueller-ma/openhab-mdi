@@ -174,16 +174,20 @@ mdi:
     - dest: garagedoor-open
       colorState: red
       alias:
-        - garagedoor-0
-        - garagedoor-10
-        - garagedoor-20
-        - garagedoor-30
-        - garagedoor-40
-        - garagedoor-50
-        - garagedoor-60
-        - garagedoor-70
-        - garagedoor-80
-        - garagedoor-90
+      - garagedoor-0
+      - garagedoor-10
+      - garagedoor-20
+      - garagedoor-30
+      - garagedoor-40
+  - garage-half:
+    - dest: garagedoor-50
+      colorState: orange
+      source: /download/custom
+      alias:
+      - garagedoor-60
+      - garagedoor-70
+      - garagedoor-80
+      - garagedoor-90
   - glassdoor:
     - dest: door
       alias:

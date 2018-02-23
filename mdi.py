@@ -170,6 +170,8 @@ def main(argv):
                     for destname in mdi[sourcename]:
 
                         srcfile = args.input_path + '/' + sourcename + '.svg'
+                        if 'source' in destname:
+                            srcfile = os.path.abspath(os.path.dirname(__file__)) + destname['source'] + '/' + sourcename + '.svg'
                         dstfile = args.output_path + '/' + destname['dest'] + '.svg'
 
                         # copy file
