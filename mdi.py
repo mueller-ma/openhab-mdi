@@ -2,6 +2,7 @@
 
 import sys
 import os
+import random
 from os.path import expanduser
 from shutil import copyfile
 import fileinput
@@ -153,6 +154,8 @@ def main(argv):
             "skin4": "#BA7750",
             "skin5": "#A55D2B",
             "skin6": "#3C201D" }
+    # Material colors, mostly 500 or brightest one with white font: https://material.io/guidelines/style/color.html
+    colorsRandom = ["#F44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#1E88E5", "#0288D1", "#0097A7", "#009688", "#43A047", "#558B2F", "#827717", "#FFC107", "#F4511E", "#607D8B"]
 
 
     with open(args.filename) as f:
@@ -183,6 +186,8 @@ def main(argv):
                         elif args.color_mode == "random":
                             if 'colorRandom' in destname:
                                 color = colors[destname['colorRandom']]
+                            else:
+                                color = random.choice(colorsRandom)
 
                         if args.dryrun:
                             print('Color of file ' + dstfile + ' would have been replaced with ' + color)

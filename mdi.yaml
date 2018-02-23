@@ -122,10 +122,12 @@ mdi:
     - dest: carbondioxide
   - fire:
     - dest: fire
+      colorRandom: red
       alias:
       - fire-on
     - dest: fire-off
       colorState: grey
+      colorRandom: red
   - hotel:
     - dest: bedroom
   - blinds:
