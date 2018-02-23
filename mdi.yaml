@@ -542,3 +542,115 @@ mdi:
         - job-error
     - dest: job-processing
       color: "#0000CD"
+  - baby:
+    - dest: baby_1
+      color: "#F4D0B1"
+    - dest: baby_2
+      color: "#E7B48F"
+    - dest: baby_3
+      color: "#D29E7C"
+    - dest: baby_4
+      color: "#BA7750"
+    - dest: baby_5
+      color: "#A55D2B"
+    - dest: baby_6
+      color: "#3C201D"
+  - human-male:
+    - dest: boy_1
+      color: "#F4D0B1"
+      alias:
+      - man_1
+    - dest: boy_2
+      color: "#E7B48F"
+      alias:
+      - man_2
+    - dest: boy_3
+      color: "#D29E7C"
+      alias:
+      - man_3
+    - dest: boy_4
+      color: "#BA7750"
+      alias:
+      - man_4
+    - dest: boy_5
+      color: "#A55D2B"
+      alias:
+      - man_5
+    - dest: boy_6
+      color: "#3C201D"
+      alias:
+      - man_6
+  - human-female:
+    - dest: girl_1
+      color: "#F4D0B1"
+      alias:
+      - woman_1
+    - dest: girl_2
+      color: "#E7B48F"
+      alias:
+      - woman_2
+    - dest: girl_3
+      color: "#D29E7C"
+      alias:
+      - woman_3
+    - dest: girl_4
+      color: "#BA7750"
+      alias:
+      - woman_4
+    - dest: girl_5
+      color: "#A55D2B"
+      alias:
+      - woman_5
+    - dest: girl_6
+      color: "#3C201D"
+      alias:
+      - woman_6
+  - human-male-female:
+    - dest: parents_1_1
+      color: "#F4D0B1"
+      alias:
+      - parents_1_2
+      - parents_1_3
+      - parents_1_4
+      - parents_1_5
+      - parents_1_6
+    - dest: parents_2
+      color: "#E7B48F"
+      alias:
+      - parents_2_2
+      - parents_2_3
+      - parents_2_4
+      - parents_2_5
+      - parents_2_6
+    - dest: parents_3
+      color: "#D29E7C"
+      alias:
+      - parents_3_2
+      - parents_3_3
+      - parents_3_4
+      - parents_3_5
+      - parents_3_6
+    - dest: parents_4
+      color: "#BA7750"
+      alias:
+      - parents_4_2
+      - parents_4_3
+      - parents_4_4
+      - parents_4_5
+      - parents_4_6
+    - dest: parents_5
+      color: "#A55D2B"
+      alias:
+      - parents_5_2
+      - parents_5_3
+      - parents_5_4
+      - parents_5_5
+      - parents_5_6
+    - dest: parents_6
+      color: "#3C201D"
+      alias:
+      - parents_6_2
+      - parents_6_3
+      - parents_6_4
+      - parents_6_5
+      - parents_6_6
