@@ -28,6 +28,8 @@ mdi:
       color: "#DC143C"
       alias:
         - siren-on
+  - water:
+    - dest: water
   - water-percent:
     - dest: humidity
     - dest: humidity-0
@@ -51,6 +53,7 @@ mdi:
     - dest: colorlight
       alias:
         - colorwheel
+        - colorpicker
   - bell:
     - dest: alarm
     - dest: alarm-on
@@ -59,51 +62,75 @@ mdi:
       color: "#32CD32"
   - battery-outline:
     - dest: battery
+    - dest: battery-0
+      color: "#DC143C"
       alias:
-        - battery-0
+      - batterylevel-0
+      - lowbattery
   - battery-10:
     - dest: battery-10
       color: "#DC143C"
+      alias:
+      - batterylevel-10
   - battery-20:
     - dest: battery-20
       color: "#DC143C"
+      alias:
+      - batterylevel-20
   - battery-30:
     - dest: battery-30
       color: "#DC143C"
+      alias:
+      - batterylevel-30
   - battery-40:
     - dest: battery-40
       color: "#FFD700"
+      alias:
+      - batterylevel-40
   - battery-50:
     - dest: battery-50
       color: "#FFD700"
+      alias:
+      - batterylevel-50
   - battery-60:
     - dest: battery-60
       color: "#FFD700"
+      alias:
+      - batterylevel-60
   - battery-70:
     - dest: battery-70
       color: "#32CD32"
+      alias:
+      - batterylevel-70
   - battery-80:
     - dest: battery-80
       color: "#32CD32"
+      alias:
+      - batterylevel-80
   - battery-90:
     - dest: battery-90
       color: "#32CD32"
+      alias:
+      - batterylevel-90
   - battery:
     - dest: battery-100
       color: "#32CD32"
       alias:
         - battery-on
+        - batterylevel-100
+  - periodic-table-co2:
+    - dest: carbondioxide
   - fire:
     - dest: fire
       alias:
-        - fire-on
+      - fire-on
     - dest: fire-off
       color: grey
   - hotel:
     - dest: bedroom
   - blinds:
     - dest: blinds
-      alias:
+      alias: # todo add colors
         - blinds-0
         - blinds-10
         - blinds-20
@@ -169,8 +196,32 @@ mdi:
         - frontdoor-closed
   - clock:
     - dest: clock
+      alias:
+      - time
     - dest: clock-on
       color: "#32CD32"
+      alias:
+      - time-on
+    - dest: clock-off
+      color: "#DC143C"
+      alias:
+      - time-off
+  - nest-thermostat:
+    - dest: heating
+    - dest: heating-on
+      color: "#32CD32"
+    - dest: heating-off
+      color: "#DC143C"
+  - movie:
+    - dest: mediacontrol
+      alias:
+      - video
+  - tshirt-crew:
+    - dest: wardrobe
+  - cursor-move:
+    - dest: movecontrol
+  - magnify:
+    - dest: zoom
   - flash:
     - dest: energy
   - alert:
@@ -180,12 +231,35 @@ mdi:
       alias:
         - fan_box
         - fan_ceiling
+  - water-pump:
+    - dest: faucet
+      alias:
+      - pump
   - power:
     - dest: switch
     - dest: switch-on
       color: "#32CD32"
-    - dest: swith-off
+    - dest: switch-off
       color: "#DC143C"
+  - power-plug:
+    - dest: poweroutlet
+    - dest: poweroutlet-on
+      color: "#32CD32"
+  - power-plug-off:
+    - dest: poweroutlet-off
+      color: "#DC143C"
+  - radiator:
+    - dest: radiatorcontrol
+      alias:
+      - radiator
+    - dest: radiatorcontrol-on
+      color: "#32CD32"
+      alias:
+      - radiator-on
+    - dest: radiatorcontrol-off
+      color: "#DC143C"
+      alias:
+      - radiator-off
   - signal:
     - dest: signal
       alias:
@@ -210,16 +284,38 @@ mdi:
   - wifi-off:
     - dest: network-off
       color: "#DC143C"
+  - network:
+    - dest: networkappliance
+  - ruler:
+    - dest: niveau
+  - spotlight-beam:
+    - dest: outdoorlight
+  - format-paint:
+    - dest: pantry
   - home:
     - dest: house
       alias:
       - group
     - dest: present
       color: grey
+      alias:
+      - presence
     - dest: present-on
       color: "#32CD32"
+      alias:
+      - presence-on
     - dest: present-off
       color: "#DC143C"
+      alias:
+      - presence-off
+  - key-variant:
+    - dest: keyring
+  - flower:
+    - dest: greenhouse
+  - beach:
+    - dest: vacation
+  - martini:
+    - dest: party
   - shield:
     - dest: shield
     - dest: shield-on
@@ -232,28 +328,162 @@ mdi:
     - dest: number
   - chart-line:
     - dest: line
+  - chart-pie:
+    - dest: pie
+  - microphone:
+    - dest: microphone
+      alias:
+      - recorder
+  - arrow-down-bold:
+    - dest: returnpipe
   - gauge:
     - dest: pressure
   - memory:
     - dest: memory
+  - cctv:
+    - dest: camera
+  - television:
+    - dest: screen
+    - dest: screen-on
+      color: "#32CD32"
+    - dest: screen-off
+      color: "#DC143C"
+  - bell:
+    - dest: siren
+  - bell-ring:
+    - dest: siren-on
+      color: "#32CD32"
+  - bell-off:
+    - dest: siren-off
+      color: "#DC143C"
+  - smoking:
+    - dest: smokedetector
+      alias:
+      - smoke
+    - dest: smokedetector-on
+      color: "#32CD32"
+      alias:
+      - smoke-on
+  - smoking-off:
+    - dest: smokedetector-off
+      color: "#DC143C"
+      alias:
+      - smoke-off
+  - speaker:
+    - dest: speaker
+    - dest: speaker-on
+      color: "#32CD32"
+  - speaker-off:
+    - dest: speaker-off
+      color: "#DC143C"
+  - volume-high: # todo add 0 to 100 and on/off icons
+    - dest: soundvolume
+  - volume-off:
+    - dest: soundvolume_mute
+  - toggle-switch-on:
+    - dest: wallswitch
+    - dest: wallswitch-on
+      color: "#32CD32"
+  - toggle-switch-off:
+    - dest: wallswitch-off
+      color: "#DC143C"
+  - web:
+    - dest: webservice
+    - dest: webservice-on
+      color: "#32CD32"
+    - dest: webservice-off
+      color: "#DC143C"
+  - window-closed:
+    - dest: window
+      alias:
+      - contact
+    - dest: window-closed
+      color: "#32CD32"
+      alias:
+      - contact-closed
+  - window-open:
+    - dest: window-open
+      color: "#DC143C"
+      alias:
+      - window-ajar
+      - contact-open
+      - contact-ajar
+  - washing-machine:
+    - dest: whitegood
+      alias:
+      - dryer
+      - washingmachine
+      - washingmachine_2
+    - dest: whitegood-on
+      color: "#32CD32"
+      alias:
+      - dryer-on
+      - washingmachine-on
+      - washingmachine_2-1
+      - washingmachine_2-2
+    - dest: whitegood-off
+      color: "#DC143C"
+      alias:
+      - dryer-off
+      - washingmachine
+      - washingmachine_2-0
+      - washingmachine_2-3
+  - car:
+    - dest: car
+  - robot:
+    - dest: cleaningrobot # todo: find a better icon
+  - air-conditioner:
+    - dest: hvac
   - radio:
     - dest: receiver
       alias:
       - player
     - dest: receiver-on
       color: "#32CD32"
+      alias:
+      - player-on
     - dest: receiver-off
       color: "#DC143C"
+      alias:
+      - player-off
+  - remote:
+    - dest: remotecontrol
   - run-fast:
     - dest: motion
+      alias:
+      - motiondetector
+  - chart-areaspline:
+    - dest: qualityofservice
+  - waves:
+    - dest: flow
+  - coin:
+    - dest: piggybank
+      alias:
+      - price
   - tree:
     - dest: garden
   - gas-cylinder:
     - dest: gas
+  - oil:
+    - dest: oil
+  - checkbox-marked-circle:
+    - dest: status
+  - briefcase:
+    - dest: suitcase
+  - white-balance-sunny:
+    - dest: solarplant
+  - cup-water:
+    - dest: softener
   - sofa:
     - dest: sofa
+      alias:
+      - livingroom
+  - stove:
+    - dest: kitchen
   - thermometer:
     - dest: temperature
+  - weather-sunny:
+    - dest: sun
   - weather-sunset-up:
     - dest: sunrise
   - weather-sunset-down:
@@ -264,10 +494,18 @@ mdi:
     - dest: rain
   - weather-windy:
     - dest: wind
+  - weather-night:
+    - dest: moon
+  - cloud:
+    - dest: cloud
   - settings:
     - dest: settings
+  - emoticon-poop:
+    - dest: sewerage
+  - emoticon-happy:
+    - dest: smiley
   - lightbulb:
-    - dest: light-0
+    - dest: light-0 # todo: add color here?
       alias:
       - light
       - light-off
@@ -326,12 +564,18 @@ mdi:
       alias:
       - dimmablelight-10
       - slider-10
+  - lock:
+    - dest: lock
+      alias:
+      - lock-closed
+  - lock-open:
+    - dest: lock-open
   - server:
     - dest: server
   - projector-screen:
-    - dest: cinemascreen
+    - dest: cinemascreen # todo add color?
       alias:
-        - cinemascreen-100
+      - cinemascreen-100
     - dest: cinemascreen-0
     - dest: cinemascreen-10
     - dest: cinemascreen-20
@@ -344,8 +588,12 @@ mdi:
     - dest: cinemascreen-90
   - snowflake:
     - dest: climate
+      alias:
+      - snow
     - dest: climate-on
-      color: "#0000CD"
+      color: "#32CD32"
+    - dest: climate-off
+      color: "#DC143C"
   - cloud-upload:
     - dest: upload
   - cloud-download:
@@ -364,3 +612,115 @@ mdi:
         - job-error
     - dest: job-processing
       color: "#0000CD"
+  - baby:
+    - dest: baby_1
+      color: "#F4D0B1"
+    - dest: baby_2
+      color: "#E7B48F"
+    - dest: baby_3
+      color: "#D29E7C"
+    - dest: baby_4
+      color: "#BA7750"
+    - dest: baby_5
+      color: "#A55D2B"
+    - dest: baby_6
+      color: "#3C201D"
+  - human-male:
+    - dest: boy_1
+      color: "#F4D0B1"
+      alias:
+      - man_1
+    - dest: boy_2
+      color: "#E7B48F"
+      alias:
+      - man_2
+    - dest: boy_3
+      color: "#D29E7C"
+      alias:
+      - man_3
+    - dest: boy_4
+      color: "#BA7750"
+      alias:
+      - man_4
+    - dest: boy_5
+      color: "#A55D2B"
+      alias:
+      - man_5
+    - dest: boy_6
+      color: "#3C201D"
+      alias:
+      - man_6
+  - human-female:
+    - dest: girl_1
+      color: "#F4D0B1"
+      alias:
+      - woman_1
+    - dest: girl_2
+      color: "#E7B48F"
+      alias:
+      - woman_2
+    - dest: girl_3
+      color: "#D29E7C"
+      alias:
+      - woman_3
+    - dest: girl_4
+      color: "#BA7750"
+      alias:
+      - woman_4
+    - dest: girl_5
+      color: "#A55D2B"
+      alias:
+      - woman_5
+    - dest: girl_6
+      color: "#3C201D"
+      alias:
+      - woman_6
+  - human-male-female:
+    - dest: parents_1_1
+      color: "#F4D0B1"
+      alias:
+      - parents_1_2
+      - parents_1_3
+      - parents_1_4
+      - parents_1_5
+      - parents_1_6
+    - dest: parents_2
+      color: "#E7B48F"
+      alias:
+      - parents_2_2
+      - parents_2_3
+      - parents_2_4
+      - parents_2_5
+      - parents_2_6
+    - dest: parents_3
+      color: "#D29E7C"
+      alias:
+      - parents_3_2
+      - parents_3_3
+      - parents_3_4
+      - parents_3_5
+      - parents_3_6
+    - dest: parents_4
+      color: "#BA7750"
+      alias:
+      - parents_4_2
+      - parents_4_3
+      - parents_4_4
+      - parents_4_5
+      - parents_4_6
+    - dest: parents_5
+      color: "#A55D2B"
+      alias:
+      - parents_5_2
+      - parents_5_3
+      - parents_5_4
+      - parents_5_5
+      - parents_5_6
+    - dest: parents_6
+      color: "#3C201D"
+      alias:
+      - parents_6_2
+      - parents_6_3
+      - parents_6_4
+      - parents_6_5
+      - parents_6_6

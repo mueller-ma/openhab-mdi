@@ -1,0 +1,26 @@
+https://www.eclipse.org/smarthome/documentation/features/ui/iconset/classic/readme.html
+# Places
+ * cellar See https://github.com/Templarian/MaterialDesign/issues/1964
+ * groundfloor
+ * firstfloor
+ * attic
+ * garage
+
+# Things
+ * inverter
+ * lawnmower
+ * sensor
+ * smokedetector (currently same as smoke)
+
+# Channels
+## Widgets
+ * colorpicker (currently same as colorlight)
+## Properties
+ * moisture (maybe some alias to humidity)
+ * noise
+
+# Other icons (not mandatory, but included in classic iconset)
+ * cistern
+ * incline
+ * rgb
+ * toilet
