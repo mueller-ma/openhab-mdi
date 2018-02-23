@@ -41,10 +41,10 @@ def is_valid_file(parser, arg):
         return arg
 
 def is_valid_color_mode(parser, arg):
-    if (arg == "state") or (arg == "random") or (arg == "none"):
+    if (arg == "state") or (arg == "random") or (arg == "none") or (arg == "combined"):
         return arg
     else:
-        parser.error("Color mode %s is not valid!" % arg)
+        parser.error("Color mode %s is not valid! Can be state, random, combined or none" % arg)
 
 def empty_folder(folder_path, verbose):
     if verbose:
@@ -153,7 +153,8 @@ def main(argv):
             "skin3": "#D29E7C",
             "skin4": "#BA7750",
             "skin5": "#A55D2B",
-            "skin6": "#3C201D" }
+            "skin6": "#3C201D",
+            "androidGreen": "#A4C639" }
     # Material colors, mostly 500 or brightest one with white font: https://material.io/guidelines/style/color.html
     colorsRandom = ["#F44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#1E88E5", "#0288D1", "#0097A7", "#009688", "#43A047", "#558B2F", "#827717", "#FFC107", "#F4511E", "#607D8B"]
 
@@ -185,6 +186,13 @@ def main(argv):
                                 color = colors[destname['colorState']]
                         elif args.color_mode == "random":
                             if 'colorRandom' in destname:
+                                color = colors[destname['colorRandom']]
+                            else:
+                                color = random.choice(colorsRandom)
+                        elif args.color_mode == "combined":
+                            if 'colorState' in destname:
+                                color = colors[destname['colorState']]
+                            elif 'colorRandom' in destname:
                                 color = colors[destname['colorRandom']]
                             else:
                                 color = random.choice(colorsRandom)
