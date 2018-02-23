@@ -214,6 +214,10 @@ mdi:
       color: "#DC143C"
   - movie:
     - dest: mediacontrol
+      alias:
+      - video
+  - tshirt-crew:
+    - dest: wardrobe
   - cursor-move:
     - dest: movecontrol
   - magnify:
@@ -227,6 +231,10 @@ mdi:
       alias:
         - fan_box
         - fan_ceiling
+  - water-pump:
+    - dest: faucet
+      alias:
+      - pump
   - power:
     - dest: switch
     - dest: switch-on
@@ -242,10 +250,16 @@ mdi:
       color: "#DC143C"
   - radiator:
     - dest: radiatorcontrol
+      alias:
+      - radiator
     - dest: radiatorcontrol-on
       color: "#32CD32"
+      alias:
+      - radiator-on
     - dest: radiatorcontrol-off
       color: "#DC143C"
+      alias:
+      - radiator-off
   - signal:
     - dest: signal
       alias:
@@ -272,6 +286,12 @@ mdi:
       color: "#DC143C"
   - network:
     - dest: networkappliance
+  - ruler:
+    - dest: niveau
+  - spotlight-beam:
+    - dest: outdoorlight
+  - format-paint:
+    - dest: pantry
   - home:
     - dest: house
       alias:
@@ -288,6 +308,10 @@ mdi:
       color: "#DC143C"
       alias:
       - presence-off
+  - key-variant:
+    - dest: keyring
+  - flower:
+    - dest: greenhouse
   - beach:
     - dest: vacation
   - martini:
@@ -304,6 +328,14 @@ mdi:
     - dest: number
   - chart-line:
     - dest: line
+  - chart-pie:
+    - dest: pie
+  - microphone:
+    - dest: microphone
+      alias:
+      - recorder
+  - arrow-down-bold:
+    - dest: returnpipe
   - gauge:
     - dest: pressure
   - memory:
@@ -363,19 +395,39 @@ mdi:
       color: "#DC143C"
   - window-closed:
     - dest: window
+      alias:
+      - contact
     - dest: window-closed
       color: "#32CD32"
+      alias:
+      - contact-closed
   - window-open:
     - dest: window-open
       color: "#DC143C"
       alias:
       - window-ajar
+      - contact-open
+      - contact-ajar
   - washing-machine:
     - dest: whitegood
+      alias:
+      - dryer
+      - washingmachine
+      - washingmachine_2
     - dest: whitegood-on
       color: "#32CD32"
+      alias:
+      - dryer-on
+      - washingmachine-on
+      - washingmachine_2-1
+      - washingmachine_2-2
     - dest: whitegood-off
       color: "#DC143C"
+      alias:
+      - dryer-off
+      - washingmachine
+      - washingmachine_2-0
+      - washingmachine_2-3
   - car:
     - dest: car
   - robot:
@@ -388,8 +440,12 @@ mdi:
       - player
     - dest: receiver-on
       color: "#32CD32"
+      alias:
+      - player-on
     - dest: receiver-off
       color: "#DC143C"
+      alias:
+      - player-off
   - remote:
     - dest: remotecontrol
   - run-fast:
@@ -410,6 +466,14 @@ mdi:
     - dest: gas
   - oil:
     - dest: oil
+  - checkbox-marked-circle:
+    - dest: status
+  - briefcase:
+    - dest: suitcase
+  - white-balance-sunny:
+    - dest: solarplant
+  - cup-water:
+    - dest: softener
   - sofa:
     - dest: sofa
       alias:
@@ -436,6 +500,10 @@ mdi:
     - dest: cloud
   - settings:
     - dest: settings
+  - emoticon-poop:
+    - dest: sewerage
+  - emoticon-happy:
+    - dest: smiley
   - lightbulb:
     - dest: light-0 # todo: add color here?
       alias:
@@ -505,9 +573,9 @@ mdi:
   - server:
     - dest: server
   - projector-screen:
-    - dest: cinemascreen
+    - dest: cinemascreen # todo add color?
       alias:
-        - cinemascreen-100
+      - cinemascreen-100
     - dest: cinemascreen-0
     - dest: cinemascreen-10
     - dest: cinemascreen-20
@@ -523,7 +591,9 @@ mdi:
       alias:
       - snow
     - dest: climate-on
-      color: "#0000CD"
+      color: "#32CD32"
+    - dest: climate-off
+      color: "#DC143C"
   - cloud-upload:
     - dest: upload
   - cloud-download:
