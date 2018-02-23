@@ -288,6 +288,20 @@ mdi:
       colorState: red
   - network:
     - dest: networkappliance
+  - android:
+    - dest: android
+      colorState: androidGreen
+      colorRandom: androidGreen
+      alias:
+      - android-on
+    - dest: android-off
+      colorState: red
+  - apple:
+    - dest: apple
+    - dest: apple-on
+      colorState: green
+    - dest: apple-off
+      colorState: red
   - ruler:
     - dest: niveau
   - spotlight-beam:
