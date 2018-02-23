@@ -120,6 +120,29 @@ def main(argv):
     sample += "Icon | Sample\n"
     sample += " --- | --- \n"
 
+    colors = {"green": "#32CD32",
+            "red": "#DC143C",
+            "blue": "#0000CD",
+            "yellow": "#FFD700",
+            "grey": "#9E9E9E",      # Grey 500
+            "orange": "#FF5722",    # Deep Orange 500
+            "yellow90": "#E5C100",
+            "yellow80": "#CCAC00",
+            "yellow70": "#B29600",
+            "yellow60": "#998100",
+            "yellow50": "#7F6B00",
+            "yellow40": "#665600",
+            "yellow30": "#4C4000",
+            "yellow20": "#332B00",
+            "yellow10": "#191500",
+            "skin1": "#F4D0B1",     # From ESH Classic icon set
+            "skin2": "#E7B48F",
+            "skin3": "#D29E7C",
+            "skin4": "#BA7750",
+            "skin5": "#A55D2B",
+            "skin6": "#3C201D" }
+
+
     with open(args.filename) as f:
         try:
             doc = yaml.safe_load(f)
@@ -142,12 +165,13 @@ def main(argv):
 
                         # modify color of destination file
                         if 'colorState' in destname:
+                            color = colors[destname['colorState']]
                             if args.dryrun:
-                                print('Color of file ' + dstfile + ' would have been replaced with ' + destname['colorState'])
+                                print('Color of file ' + dstfile + ' would have been replaced with ' + color)
                             else:
                                 if args.verbose:
-                                    print('Replace icon color with ' + destname['colorState'])
-                                svg_replace_fill(dstfile, '#000000', destname['colorState'])
+                                    print('Replace icon color with ' + color)
+                                svg_replace_fill(dstfile, '#000000', color)
 
                         # create aliases
                         if 'alias' in destname:
