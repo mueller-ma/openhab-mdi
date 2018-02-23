@@ -39,6 +39,12 @@ def is_valid_file(parser, arg):
     else:
         return arg
 
+def is_valid_color_mode(parser, arg):
+    if (arg == "state") or (arg == "random") or (arg == "none"):
+        return arg
+    else:
+        parser.error("Color mode %s is not valid!" % arg)
+
 def empty_folder(folder_path, verbose):
     if verbose:
         print('Deleting all files from ' + folder_path + '...')
@@ -84,6 +90,12 @@ def get_parser():
                         default=pwd+"/iconset",
                         metavar="OUTPUT-PATH",
                         help="write icons to OUTPUT-PATH")
+    parser.add_argument("-c", "--color-mode",
+                        dest="color_mode",
+                        type=lambda x: is_valid_color_mode(parser, x),
+                        default="state",
+                        metavar="COLOR MODE",
+                        help="set color mode: state, random, none")
     parser.add_argument("-n", "--dry-run",
                         action="store_true",
                         dest="dryrun",
@@ -164,14 +176,20 @@ def main(argv):
                             sample +=  destname['dest'] + " | ![" + destname['dest'] + "](file://" + dstfile +") \n"
 
                         # modify color of destination file
-                        if 'colorState' in destname:
-                            color = colors[destname['colorState']]
-                            if args.dryrun:
-                                print('Color of file ' + dstfile + ' would have been replaced with ' + color)
-                            else:
-                                if args.verbose:
-                                    print('Replace icon color with ' + color)
-                                svg_replace_fill(dstfile, '#000000', color)
+                        color = '#000000'
+                        if args.color_mode == "state":
+                            if 'colorState' in destname:
+                                color = colors[destname['colorState']]
+                        elif args.color_mode == "random":
+                            if 'colorRandom' in destname:
+                                color = colors[destname['colorRandom']]
+
+                        if args.dryrun:
+                            print('Color of file ' + dstfile + ' would have been replaced with ' + color)
+                        else:
+                            if args.verbose:
+                                print('Replace icon color with ' + color)
+                            svg_replace_fill(dstfile, '#000000', color)
 
                         # create aliases
                         if 'alias' in destname:
