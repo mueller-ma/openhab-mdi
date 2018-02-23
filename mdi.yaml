@@ -302,6 +302,14 @@ mdi:
       colorState: green
     - dest: apple-off
       colorState: red
+  - kodi:
+    - dest: kodi
+      colorState: kodiBlue
+      colorRandom: kodiBlue
+    - dest: kodi-on
+      colorState: green
+    - dest: kodi-off
+      colorState: red
   - ruler:
     - dest: niveau
   - spotlight-beam:
@@ -328,6 +336,16 @@ mdi:
     - dest: keyring
   - flower:
     - dest: greenhouse
+      alias:
+      - flower
+    - dest: greenhouse-on
+      colorState: green
+      alias:
+      - flower-on
+    - dest: greenhouse-off
+      colorState: brown
+      alias:
+      - flower-off
   - beach:
     - dest: vacation
   - martini:

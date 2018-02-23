@@ -139,6 +139,7 @@ def main(argv):
             "yellow": "#FFD700",
             "grey": "#9E9E9E",      # Grey 500
             "orange": "#FF5722",    # Deep Orange 500
+            "brown": "#795548",     # Brown 500
             "yellow90": "#E5C100",
             "yellow80": "#CCAC00",
             "yellow70": "#B29600",
@@ -154,6 +155,7 @@ def main(argv):
             "skin4": "#BA7750",
             "skin5": "#A55D2B",
             "skin6": "#3C201D",
+            "kodiBlue": "#00A6F4",
             "androidGreen": "#A4C639" }
     # Material colors, mostly 500 or brightest one with white font: https://material.io/guidelines/style/color.html
     colorsRandom = ["#F44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#1E88E5", "#0288D1", "#0097A7", "#009688", "#43A047", "#558B2F", "#827717", "#FFC107", "#F4511E", "#607D8B"]
