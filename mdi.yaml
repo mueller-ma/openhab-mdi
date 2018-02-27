@@ -1,5 +1,5 @@
 mdi:
-  - playlist-pla:
+  - playlist-play:
     - dest: playlist
   - text-to-speech:
     - dest: tts
