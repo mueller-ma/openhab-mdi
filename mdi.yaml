@@ -270,6 +270,12 @@ mdi:
   - power-plug-off:
     - dest: poweroutlet-off
       colorState: red
+  - flash:
+    - dest: inverter
+    - dest: inverter-on
+      colorState: green
+    - dest: inverter-off
+      colorState: red
   - radiator:
     - dest: radiatorcontrol
       alias:
