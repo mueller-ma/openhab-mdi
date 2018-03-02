@@ -398,6 +398,23 @@ mdi:
     - dest: returnpipe
   - gauge:
     - dest: pressure
+  - gauge-empty:
+    - dest: pressure-0
+      alias:
+      - pressure-10
+      - pressure-20
+  - gauge-low:
+    - dest: pressure-30
+      alias:
+      - pressure-40
+      - pressure-50
+      - pressure-60
+      - pressure-70
+  - gauge-full:
+    - dest: pressure-80
+      alias:
+      - pressure-90
+      - pressure-100
   - memory:
     - dest: memory
   - cctv:
