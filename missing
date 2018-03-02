@@ -4,6 +4,9 @@ https://www.eclipse.org/smarthome/documentation/features/ui/iconset/classic/read
  * groundfloor
  * firstfloor
  * attic
+ * office See https://github.com/Templarian/MaterialDesign/issues/2462
+ * terrace See https://github.com/Templarian/MaterialDesign/issues/2468
+ * bath See https://github.com/Templarian/MaterialDesign/issues/1560
 
 # Things
  * inverter
