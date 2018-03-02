@@ -170,6 +170,14 @@ mdi:
       colorState: green
     - dest: sensor-off
       colorState: red
+  - elevation-rise:
+    - dest: incline
+  - format-color-fill:
+    - dest: rgb
+    - dest: rgb-on
+      colorState: green
+    - dest: rgb-off
+      colorState: red
   - garage:
     - dest: garagedoor
       alias:
