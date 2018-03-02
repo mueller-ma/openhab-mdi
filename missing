@@ -10,18 +10,18 @@ https://www.eclipse.org/smarthome/documentation/features/ui/iconset/classic/read
 
 # Things
  * inverter
- * lawnmower
- * smokedetector (currently same as smoke)
+ * lawnmower https://github.com/Templarian/MaterialDesign/issues/2865
+ * smokedetector (currently same as smoke) See https://github.com/Templarian/MaterialDesign/issues/2864
 
 # Channels
 ## Widgets
  * colorpicker (currently same as colorlight)
 ## Properties
- * moisture (maybe some alias to humidity)
- * noise
+ * moisture Maybe alias to humidity
+ * noise Maybe use https://github.com/Templarian/MaterialDesign/blob/master/icons/svg/volume-high.svg
 
 # Other icons (not mandatory, but included in classic iconset)
- * cistern
+ * cistern https://github.com/Templarian/MaterialDesign/issues/2866
  * incline
  * rgb
- * toilet
+ * toilet https://github.com/Templarian/MaterialDesign/issues/1560 https://github.com/Templarian/MaterialDesign/issues/529
