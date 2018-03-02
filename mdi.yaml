@@ -164,6 +164,12 @@ mdi:
     - dest: chart
   - popcorn:
     - dest: cinema
+  - radar:
+    - dest: sensor
+    - dest: sensor-on
+      colorState: green
+    - dest: sensor-off
+      colorState: red
   - garage:
     - dest: garagedoor
       alias:
